@@ -1,0 +1,3692 @@
+{
+  "schema_version": "transneft-glossary-runtime-v002",
+  "glossary_id": "transneft_glossary_v002",
+  "source_workbook_sha256": "0572dc946f7feb842ef26a5fea7262173fe07bb8424b13b646dd5c0b84df1cbe",
+  "compiled_at": "2026-08-05T12:00:00+03:00",
+  "supported_modes": [
+    "disabled",
+    "retrieved_top3",
+    "retrieved_top5",
+    "retrieved_top10"
+  ],
+  "terms": [
+    {
+      "term_id": "tn_0001",
+      "ru_term": "экологическая безопасность",
+      "en_preferred": "environmental safety",
+      "ru_aliases": [
+        "экологической безопасности"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена environmental_safety.",
+      "domain": "environmental_safety",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_real_gold_v001_pair_5060_sample_01",
+        "kaztransoil_real_gold_v001_pair_5616_sample_01",
+        "kaztransoil_real_gold_v001_pair_5616_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0002",
+      "ru_term": "импортозамещение",
+      "en_preferred": "import substitution",
+      "ru_aliases": [
+        "импортозамещения"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена equipment_import_substitution.",
+      "domain": "equipment_import_substitution",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0008",
+        "cpc_v002_pair_0013_sample_03",
+        "transneft_v002_pair_0005_sample_01",
+        "transneft_v002_pair_0008_sample_03"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0003",
+      "ru_term": "энергосбережение",
+      "en_preferred": "energy saving",
+      "ru_aliases": [
+        "энергосбережения"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена equipment_import_substitution.",
+      "domain": "equipment_import_substitution",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_real_gold_v001_pair_5208_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0004",
+      "ru_term": "энергоэффективность",
+      "en_preferred": "energy efficiency",
+      "ru_aliases": [
+        "энергоэффективности"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена equipment_import_substitution.",
+      "domain": "equipment_import_substitution",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_real_gold_v001_pair_5060_sample_01",
+        "kaztransoil_real_gold_v001_pair_5208_sample_01",
+        "kaztransoil_real_gold_v001_pair_5208_sample_02",
+        "kaztransoil_real_gold_v001_pair_5632_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0005",
+      "ru_term": "надёжность",
+      "en_preferred": "reliability",
+      "ru_aliases": [
+        "надежность",
+        "надёжности",
+        "надежности"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена industrial_safety.",
+      "domain": "industrial_safety",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0005",
+        "cpc_v002_pair_0013_sample_03",
+        "kaztransoil_real_gold_v001_pair_5077_sample_01",
+        "kaztransoil_real_gold_v001_pair_5173_sample_01",
+        "kaztransoil_real_gold_v001_pair_5616_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0006",
+      "ru_term": "охрана труда",
+      "en_preferred": "occupational safety",
+      "ru_aliases": [
+        "охраны труда"
+      ],
+      "en_allowed": [
+        "labour protection",
+        "labor protection"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена industrial_safety.",
+      "domain": "industrial_safety",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_real_gold_v001_pair_3504_sample_01",
+        "kaztransoil_real_gold_v001_pair_4001_sample_01",
+        "kaztransoil_real_gold_v001_pair_5077_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0007",
+      "ru_term": "промышленная безопасность",
+      "en_preferred": "industrial safety",
+      "ru_aliases": [
+        "промышленной безопасности"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена industrial_safety.",
+      "domain": "industrial_safety",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_v002_pair_0006_sample_01",
+        "kaztransoil_real_gold_v001_pair_3504_sample_01",
+        "kaztransoil_real_gold_v001_pair_4001_sample_01",
+        "kaztransoil_real_gold_v001_pair_5077_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0008",
+      "ru_term": "выносное причальное устройство",
+      "en_preferred": "Single Point Mooring",
+      "ru_aliases": [
+        "выносного причального устройства",
+        "выносных причальных устройств",
+        "ВПУ"
+      ],
+      "en_allowed": [
+        "SPM",
+        "Single Point Moorings"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена marine_terminals.",
+      "domain": "marine_terminals",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240729_sample_01",
+        "cpc_real_gold_v001_pair_20240827_sample_02",
+        "cpc_real_gold_v001_pair_20241024_sample_02",
+        "cpc_real_gold_v001_pair_20241122_sample_01",
+        "cpc_real_gold_v001_pair_20241225_1_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0009",
+      "ru_term": "морской порт",
+      "en_preferred": "seaport",
+      "ru_aliases": [
+        "морского порта"
+      ],
+      "en_allowed": [
+        "sea port"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена marine_terminals.",
+      "domain": "marine_terminals",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_v002_pair_0007_sample_01",
+        "kaztransoil_v002_pair_0008_sample_01",
+        "kaztransoil_v002_pair_0010_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0010",
+      "ru_term": "морской терминал",
+      "en_preferred": "Marine Terminal",
+      "ru_aliases": [
+        "морского терминала",
+        "морском терминале"
+      ],
+      "en_allowed": [
+        "marine terminal"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена marine_terminals.",
+      "domain": "marine_terminals",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240409_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_03",
+        "cpc_real_gold_v001_pair_20240827_sample_02",
+        "cpc_real_gold_v001_pair_20241024_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0011",
+      "ru_term": "оконечный подводный трубопроводный манифольд",
+      "en_preferred": "pipeline end manifold",
+      "ru_aliases": [
+        "оконечного подводного трубопроводного манифольда",
+        "ОПТМ"
+      ],
+      "en_allowed": [
+        "PLEM"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена marine_terminals.",
+      "domain": "marine_terminals",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240729_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0012",
+      "ru_term": "перевалка нефти",
+      "en_preferred": "oil transshipment",
+      "ru_aliases": [
+        "перевалки нефти"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена marine_terminals.",
+      "domain": "marine_terminals",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_real_gold_v001_pair_4702_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0013",
+      "ru_term": "танкер",
+      "en_preferred": "tanker",
+      "ru_aliases": [
+        "танкера",
+        "танкеров"
+      ],
+      "en_allowed": [
+        "tankers"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена marine_terminals.",
+      "domain": "marine_terminals",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240729_sample_01",
+        "cpc_real_gold_v001_pair_20241225_1_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0014",
+      "ru_term": "якорь-кессон",
+      "en_preferred": "anchor caisson",
+      "ru_aliases": [
+        "якоря-кессона",
+        "якорей-кессонов"
+      ],
+      "en_allowed": [
+        "anchor caissons"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена marine_terminals.",
+      "domain": "marine_terminals",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_v002_pair_0009_sample_01",
+        "cpc_v002_pair_0012_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0015",
+      "ru_term": "качество нефти",
+      "en_preferred": "oil quality",
+      "ru_aliases": [
+        "качества нефти"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена oil_quality.",
+      "domain": "oil_quality",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_v002_pair_0009_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0016",
+      "ru_term": "нефтепродукты",
+      "en_preferred": "petroleum products",
+      "ru_aliases": [
+        "нефтепродуктов"
+      ],
+      "en_allowed": [
+        "oil products"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена oil_quality.",
+      "domain": "oil_quality",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0009",
+        "cpc_real_gold_v001_pair_20241225_1_sample_01",
+        "kaztransoil_real_gold_v001_pair_4702_sample_03",
+        "kaztransoil_real_gold_v001_pair_5632_sample_01",
+        "kaztransoil_v002_pair_0008_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0017",
+      "ru_term": "сырая нефть",
+      "en_preferred": "crude oil",
+      "ru_aliases": [
+        "сырой нефти",
+        "нефтяное сырье",
+        "сырье"
+      ],
+      "en_allowed": [
+        "crude"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена oil_quality.",
+      "domain": "oil_quality",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240729_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_03",
+        "cpc_real_gold_v001_pair_20240827_sample_02",
+        "cpc_real_gold_v001_pair_20241024_sample_02",
+        "cpc_real_gold_v001_pair_20241114_sample_03"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0018",
+      "ru_term": "дефект трубопровода",
+      "en_preferred": "pipeline defect",
+      "ru_aliases": [
+        "дефектов трубопровода"
+      ],
+      "en_allowed": [
+        "pipeline defects"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_maintenance.",
+      "domain": "pipeline_maintenance",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240409_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0019",
+      "ru_term": "запорная арматура",
+      "en_preferred": "block valves",
+      "ru_aliases": [
+        "запорной арматуры",
+        "запорную арматуру"
+      ],
+      "en_allowed": [
+        "block valve"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_maintenance.",
+      "domain": "pipeline_maintenance",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240409_sample_01",
+        "cpc_real_gold_v001_pair_20241122_sample_01",
+        "cpc_v002_pair_0015_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0020",
+      "ru_term": "катушка",
+      "en_preferred": "spool",
+      "ru_aliases": [
+        "катушки",
+        "катушек"
+      ],
+      "en_allowed": [
+        "spools"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_maintenance.",
+      "domain": "pipeline_maintenance",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240409_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0021",
+      "ru_term": "модернизация",
+      "en_preferred": "modernisation",
+      "ru_aliases": [
+        "модернизации"
+      ],
+      "en_allowed": [
+        "modernization",
+        "upgrade"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_maintenance.",
+      "domain": "pipeline_maintenance",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0008",
+        "cpc_v002_pair_0001_sample_01",
+        "kaztransoil_real_gold_v001_pair_5208_sample_01",
+        "kaztransoil_v002_pair_0002_sample_01",
+        "transneft_v002_pair_0005_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0022",
+      "ru_term": "подключение оборудования",
+      "en_preferred": "connection of equipment",
+      "ru_aliases": [
+        "подключения оборудования"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_maintenance.",
+      "domain": "pipeline_maintenance",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240409_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0023",
+      "ru_term": "регламентное техническое обслуживание",
+      "en_preferred": "regular maintenance",
+      "ru_aliases": [
+        "регламентного технического обслуживания"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_maintenance.",
+      "domain": "pipeline_maintenance",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240409_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0024",
+      "ru_term": "реконструкция",
+      "en_preferred": "reconstruction",
+      "ru_aliases": [
+        "реконструкции"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_maintenance.",
+      "domain": "pipeline_maintenance",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_real_gold_v001_pair_2765_sample_01",
+        "kaztransoil_real_gold_v001_pair_2816_sample_01",
+        "kaztransoil_real_gold_v001_pair_4001_sample_01",
+        "kaztransoil_real_gold_v001_pair_5616_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0025",
+      "ru_term": "ремонт",
+      "en_preferred": "repair",
+      "ru_aliases": [
+        "ремонта",
+        "ремонтные работы"
+      ],
+      "en_allowed": [
+        "repairs"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_maintenance.",
+      "domain": "pipeline_maintenance",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240409_sample_01",
+        "cpc_v002_pair_0002_sample_01",
+        "kaztransoil_real_gold_v001_pair_5037_sample_01",
+        "kaztransoil_real_gold_v001_pair_5173_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0026",
+      "ru_term": "техническое обслуживание",
+      "en_preferred": "maintenance",
+      "ru_aliases": [
+        "технического обслуживания"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_maintenance.",
+      "domain": "pipeline_maintenance",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240409_sample_01",
+        "kaztransoil_real_gold_v001_pair_5655_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0027",
+      "ru_term": "техническое перевооружение",
+      "en_preferred": "upgrade",
+      "ru_aliases": [
+        "техперевооружение",
+        "технического перевооружения"
+      ],
+      "en_allowed": [
+        "technical upgrading"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_maintenance.",
+      "domain": "pipeline_maintenance",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240409_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_03",
+        "cpc_v002_pair_0015_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0028",
+      "ru_term": "шаровой кран",
+      "en_preferred": "ball valve",
+      "ru_aliases": [
+        "шарового крана",
+        "шаровые краны",
+        "шаровых кранов"
+      ],
+      "en_allowed": [
+        "ball valves"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_maintenance.",
+      "domain": "pipeline_maintenance",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240809_sample_02",
+        "cpc_v002_pair_0002_sample_01",
+        "cpc_v002_pair_0002_sample_02",
+        "cpc_v002_pair_0015_sample_01",
+        "cpc_v002_pair_0015_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0029",
+      "ru_term": "электроизолирующая вставка",
+      "en_preferred": "electrical isolation joint",
+      "ru_aliases": [
+        "электроизолирующих вставок"
+      ],
+      "en_allowed": [
+        "electrical isolation joints"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_maintenance.",
+      "domain": "pipeline_maintenance",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240409_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0030",
+      "ru_term": "ввод в эксплуатацию",
+      "en_preferred": "commissioning",
+      "ru_aliases": [
+        "введён в эксплуатацию",
+        "введен в эксплуатацию"
+      ],
+      "en_allowed": [
+        "put into operation",
+        "put into service"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0007",
+        "kaztransoil_real_gold_v001_pair_5173_sample_01",
+        "transneft_v002_pair_0004_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0031",
+      "ru_term": "вывод из эксплуатации",
+      "en_preferred": "decommissioning",
+      "ru_aliases": [
+        "выведено из эксплуатации"
+      ],
+      "en_allowed": [
+        "taken out of service"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240729_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0032",
+      "ru_term": "грузоотправитель",
+      "en_preferred": "shipper",
+      "ru_aliases": [
+        "грузоотправители",
+        "грузоотправителями",
+        "грузоотправителей"
+      ],
+      "en_allowed": [
+        "shippers"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240409_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_03",
+        "cpc_v002_pair_0002_sample_02",
+        "cpc_v002_pair_0006_sample_01",
+        "cpc_v002_pair_0015_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0033",
+      "ru_term": "давление",
+      "en_preferred": "pressure",
+      "ru_aliases": [
+        "давления"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0008",
+        "cpc_real_gold_v001_pair_20240409_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_03",
+        "cpc_v002_pair_0002_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0034",
+      "ru_term": "источник бесперебойного питания",
+      "en_preferred": "uninterruptible power supply",
+      "ru_aliases": [
+        "источников бесперебойного питания"
+      ],
+      "en_allowed": [
+        "uninterruptible power supply units",
+        "UPS"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240409_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_03"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0035",
+      "ru_term": "километр",
+      "en_preferred": "kilometre",
+      "ru_aliases": [
+        "километров",
+        "км"
+      ],
+      "en_allowed": [
+        "kilometer",
+        "km"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240409_sample_01",
+        "cpc_real_gold_v001_pair_20240729_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_03",
+        "cpc_real_gold_v001_pair_20240827_sample_02",
+        "cpc_real_gold_v001_pair_20241024_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0036",
+      "ru_term": "кубический метр",
+      "en_preferred": "cubic metre",
+      "ru_aliases": [
+        "кубических метров",
+        "м³",
+        "м3"
+      ],
+      "en_allowed": [
+        "cubic meter",
+        "m³",
+        "m3"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_v002_pair_0012_sample_01",
+        "kaztransoil_real_gold_v001_pair_4202_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0037",
+      "ru_term": "линейная часть",
+      "en_preferred": "line pipe",
+      "ru_aliases": [
+        "линейной части",
+        "линейном участке"
+      ],
+      "en_allowed": [
+        "pipeline section"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240409_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_01",
+        "cpc_real_gold_v001_pair_20241122_sample_01",
+        "cpc_v002_pair_0003_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0038",
+      "ru_term": "магистральный нефтепровод",
+      "en_preferred": "main oil pipeline",
+      "ru_aliases": [
+        "магистрального нефтепровода",
+        "магистральных нефтепроводов",
+        "МН"
+      ],
+      "en_allowed": [
+        "trunk oil pipeline",
+        "main oil pipelines",
+        "oil trunk pipeline",
+        "OTP"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0006",
+        "transneft_core_v001_0008",
+        "kaztransoil_real_gold_v001_pair_2816_sample_01",
+        "kaztransoil_real_gold_v001_pair_2851_sample_03",
+        "kaztransoil_real_gold_v001_pair_3398_sample_01",
+        "transneft_core_v002_0142"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0039",
+      "ru_term": "механико-технологическое оборудование",
+      "en_preferred": "mechanical and process equipment",
+      "ru_aliases": [
+        "механо-технологического оборудования"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240409_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0040",
+      "ru_term": "нефтеперерабатывающий завод",
+      "en_preferred": "oil refinery",
+      "ru_aliases": [
+        "нефтеперерабатывающего завода",
+        "НПЗ"
+      ],
+      "en_allowed": [
+        "refinery"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_real_gold_v001_pair_3398_sample_01",
+        "kaztransoil_real_gold_v001_pair_3693_sample_01",
+        "kaztransoil_real_gold_v001_pair_4228_sample_01",
+        "kaztransoil_real_gold_v001_pair_4402_sample_01",
+        "kaztransoil_real_gold_v001_pair_4702_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0041",
+      "ru_term": "нефтепровод",
+      "en_preferred": "oil pipeline",
+      "ru_aliases": [
+        "нефтепровода",
+        "нефтепроводу",
+        "нефтепроводов"
+      ],
+      "en_allowed": [
+        "pipeline"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0006",
+        "transneft_core_v001_0008",
+        "cpc_real_gold_v001_pair_20240409_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0042",
+      "ru_term": "нефтетранспортная инфраструктура",
+      "en_preferred": "oil transportation infrastructure",
+      "ru_aliases": [
+        "нефтетранспортной инфраструктуры"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_v002_pair_0002_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0043",
+      "ru_term": "оборудование",
+      "en_preferred": "equipment",
+      "ru_aliases": [
+        "оборудования"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0008",
+        "cpc_real_gold_v001_pair_20240409_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_02",
+        "cpc_real_gold_v001_pair_20241114_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0044",
+      "ru_term": "объём транспортировки нефти",
+      "en_preferred": "oil transportation volume",
+      "ru_aliases": [
+        "объем транспортировки нефти",
+        "объема транспортировки нефти"
+      ],
+      "en_allowed": [
+        "volume of oil transportation"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_real_gold_v001_pair_3398_sample_01",
+        "kaztransoil_real_gold_v001_pair_3693_sample_01",
+        "kaztransoil_real_gold_v001_pair_4228_sample_01",
+        "kaztransoil_real_gold_v001_pair_4402_sample_01",
+        "kaztransoil_real_gold_v001_pair_4702_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0045",
+      "ru_term": "перекачка нефти",
+      "en_preferred": "oil pumping",
+      "ru_aliases": [
+        "перекачки нефти"
+      ],
+      "en_allowed": [
+        "pumping of oil"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_real_gold_v001_pair_5616_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0046",
+      "ru_term": "поставка нефти",
+      "en_preferred": "oil supply",
+      "ru_aliases": [
+        "поставки нефти"
+      ],
+      "en_allowed": [
+        "oil supplies"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_real_gold_v001_pair_5632_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0047",
+      "ru_term": "сдача нефти",
+      "en_preferred": "oil delivery",
+      "ru_aliases": [
+        "сдачи нефти"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_real_gold_v001_pair_4001_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0048",
+      "ru_term": "система магистральных нефтепроводов",
+      "en_preferred": "main oil pipeline system",
+      "ru_aliases": [
+        "системе магистральных нефтепроводов"
+      ],
+      "en_allowed": [
+        "system of main oil pipelines"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_real_gold_v001_pair_3398_sample_01",
+        "kaztransoil_real_gold_v001_pair_3693_sample_01",
+        "kaztransoil_real_gold_v001_pair_4001_sample_02",
+        "kaztransoil_real_gold_v001_pair_4228_sample_01",
+        "kaztransoil_real_gold_v001_pair_4402_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0049",
+      "ru_term": "система сглаживания волн давления",
+      "en_preferred": "surge relief system",
+      "ru_aliases": [
+        "системы сглаживания волн давления",
+        "ССВД"
+      ],
+      "en_allowed": [
+        "surge relief systems",
+        "SRS"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_v002_pair_0003_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0050",
+      "ru_term": "тонна",
+      "en_preferred": "tonne",
+      "ru_aliases": [
+        "тонн",
+        "тонны",
+        "тонну"
+      ],
+      "en_allowed": [
+        "ton",
+        "tonnes",
+        "tons"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0007",
+        "cpc_v002_pair_0012_sample_02",
+        "cpc_v002_pair_0014_sample_01",
+        "kaztransoil_real_gold_v001_pair_2765_sample_01",
+        "kaztransoil_real_gold_v001_pair_2765_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0051",
+      "ru_term": "транспортировка нефти",
+      "en_preferred": "oil transportation",
+      "ru_aliases": [
+        "транспортировки нефти"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_v002_pair_0002_sample_02",
+        "cpc_v002_pair_0015_sample_02",
+        "kaztransoil_real_gold_v001_pair_2765_sample_01",
+        "kaztransoil_real_gold_v001_pair_2816_sample_01",
+        "kaztransoil_real_gold_v001_pair_3398_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0052",
+      "ru_term": "трубопровод",
+      "en_preferred": "pipeline",
+      "ru_aliases": [
+        "трубопровода",
+        "трубопроводу"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0007",
+        "transneft_core_v001_0009",
+        "cpc_real_gold_v001_pair_20240409_sample_01",
+        "cpc_real_gold_v001_pair_20240729_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_03"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0053",
+      "ru_term": "трубопроводная система",
+      "en_preferred": "pipeline system",
+      "ru_aliases": [
+        "трубопроводной системы"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240729_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_03",
+        "cpc_real_gold_v001_pair_20240827_sample_02",
+        "cpc_real_gold_v001_pair_20241024_sample_02",
+        "cpc_real_gold_v001_pair_20241114_sample_03"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0054",
+      "ru_term": "узел регулирования давления",
+      "en_preferred": "pressure control station",
+      "ru_aliases": [
+        "узла регулирования давления",
+        "узле регулирования давления",
+        "УРД"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240409_sample_01",
+        "cpc_v002_pair_0003_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0055",
+      "ru_term": "электрооборудование",
+      "en_preferred": "electrical equipment",
+      "ru_aliases": [
+        "электрооборудования"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pipeline_operations.",
+      "domain": "pipeline_operations",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240409_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0056",
+      "ru_term": "плановая остановка",
+      "en_preferred": "scheduled shutdown",
+      "ru_aliases": [
+        "плановой остановки",
+        "плановые остановки"
+      ],
+      "en_allowed": [
+        "scheduled shutdowns"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена planned_shutdown.",
+      "domain": "planned_shutdown",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240409_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_03",
+        "cpc_v002_pair_0002_sample_01",
+        "cpc_v002_pair_0002_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0057",
+      "ru_term": "планово-предупредительный ремонт",
+      "en_preferred": "scheduled preventive maintenance",
+      "ru_aliases": [
+        "планово-предупредительного ремонта"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена planned_shutdown.",
+      "domain": "planned_shutdown",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240729_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0058",
+      "ru_term": "автоматизация",
+      "en_preferred": "automation",
+      "ru_aliases": [
+        "автоматизации"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена production_automation.",
+      "domain": "production_automation",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0001",
+        "transneft_core_v001_0002",
+        "transneft_core_v001_0004",
+        "transneft_core_v001_0010",
+        "kaztransoil_real_gold_v001_pair_5616_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0059",
+      "ru_term": "автоматизированная система управления технологическими процессами",
+      "en_preferred": "automated process control system",
+      "ru_aliases": [
+        "автоматизированной системы управления технологическими процессами",
+        "АСУТП"
+      ],
+      "en_allowed": [
+        "automated process control systems",
+        "APCS"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена production_automation.",
+      "domain": "production_automation",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0001",
+        "cpc_real_gold_v001_pair_20241024_sample_01",
+        "cpc_real_gold_v001_pair_20241024_sample_02",
+        "transneft_pair_0001_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0060",
+      "ru_term": "информационная безопасность",
+      "en_preferred": "information security",
+      "ru_aliases": [
+        "информационной безопасности"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена production_automation.",
+      "domain": "production_automation",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0001",
+        "transneft_core_v001_0002",
+        "transneft_core_v001_0011",
+        "cpc_real_gold_v001_pair_20241024_sample_01",
+        "cpc_real_gold_v001_pair_20241024_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0061",
+      "ru_term": "информационные технологии",
+      "en_preferred": "information technology",
+      "ru_aliases": [
+        "информационных технологий"
+      ],
+      "en_allowed": [
+        "IT"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена production_automation.",
+      "domain": "production_automation",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0001",
+        "transneft_core_v001_0002",
+        "transneft_pair_0001_sample_01",
+        "transneft_pair_0001_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0062",
+      "ru_term": "ИТ-инфраструктура",
+      "en_preferred": "IT infrastructure",
+      "ru_aliases": [
+        "ИТ‑инфраструктуры",
+        "информационно-вычислительной инфраструктуры"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена production_automation.",
+      "domain": "production_automation",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0002",
+        "transneft_pair_0001_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0063",
+      "ru_term": "контрольно-измерительные приборы и автоматика",
+      "en_preferred": "instrumentation and automation",
+      "ru_aliases": [
+        "систем контрольно-измерительных приборов и автоматики"
+      ],
+      "en_allowed": [
+        "instrumentation and automation systems"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена production_automation.",
+      "domain": "production_automation",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240409_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0064",
+      "ru_term": "метрология",
+      "en_preferred": "metrology",
+      "ru_aliases": [
+        "метрологии"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена production_automation.",
+      "domain": "production_automation",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0001",
+        "transneft_pair_0001_sample_01",
+        "transneft_v002_pair_0009_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0065",
+      "ru_term": "промышленная автоматизация",
+      "en_preferred": "industrial automation",
+      "ru_aliases": [
+        "промышленной автоматизации"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена production_automation.",
+      "domain": "production_automation",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0001",
+        "transneft_pair_0001_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0066",
+      "ru_term": "сеть связи",
+      "en_preferred": "communication network",
+      "ru_aliases": [
+        "сетям связи",
+        "сети связи"
+      ],
+      "en_allowed": [
+        "communications network"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена production_automation.",
+      "domain": "production_automation",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0002",
+        "transneft_pair_0001_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0067",
+      "ru_term": "система управления",
+      "en_preferred": "control system",
+      "ru_aliases": [
+        "систем управления",
+        "системы управления"
+      ],
+      "en_allowed": [
+        "control systems"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена production_automation.",
+      "domain": "production_automation",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0008",
+        "cpc_real_gold_v001_pair_20240409_sample_01",
+        "cpc_real_gold_v001_pair_20241024_sample_01",
+        "transneft_v002_pair_0005_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0068",
+      "ru_term": "центр промышленной автоматизации",
+      "en_preferred": "Industrial Automation Center",
+      "ru_aliases": [
+        "Центр промышленной автоматизации"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена production_automation.",
+      "domain": "production_automation",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0001",
+        "transneft_pair_0001_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0069",
+      "ru_term": "цифровая трансформация",
+      "en_preferred": "digital transformation",
+      "ru_aliases": [
+        "цифровой трансформации"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена production_automation.",
+      "domain": "production_automation",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0001",
+        "transneft_core_v001_0002",
+        "transneft_pair_0001_sample_01",
+        "transneft_pair_0001_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0070",
+      "ru_term": "цифровизация",
+      "en_preferred": "digitalization",
+      "ru_aliases": [
+        "цифровизации"
+      ],
+      "en_allowed": [
+        "digitalisation"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена production_automation.",
+      "domain": "production_automation",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0001",
+        "transneft_pair_0001_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0071",
+      "ru_term": "магистральный насосный агрегат",
+      "en_preferred": "mainline pump unit",
+      "ru_aliases": [
+        "магистрального насосного агрегата",
+        "магистральных насосных агрегатов"
+      ],
+      "en_allowed": [
+        "mainline pumping unit"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pumping_equipment.",
+      "domain": "pumping_equipment",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_v002_pair_0003_sample_01",
+        "transneft_core_v002_0143"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0072",
+      "ru_term": "насосное оборудование",
+      "en_preferred": "pumping equipment",
+      "ru_aliases": [
+        "насосного оборудования"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pumping_equipment.",
+      "domain": "pumping_equipment",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20241114_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0073",
+      "ru_term": "электродвигатель",
+      "en_preferred": "electric motor",
+      "ru_aliases": [
+        "электродвигателя",
+        "электродвигателей"
+      ],
+      "en_allowed": [
+        "motor",
+        "motors"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pumping_equipment.",
+      "domain": "pumping_equipment",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_v002_pair_0003_sample_01",
+        "cpc_v002_pair_0007_sample_01",
+        "transneft_v002_pair_0008_sample_01",
+        "transneft_v002_pair_0008_sample_02",
+        "transneft_v002_pair_0008_sample_03"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0074",
+      "ru_term": "электропривод",
+      "en_preferred": "electric drive",
+      "ru_aliases": [
+        "электроприводов",
+        "электропривода"
+      ],
+      "en_allowed": [
+        "electric drives"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pumping_equipment.",
+      "domain": "pumping_equipment",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240409_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0075",
+      "ru_term": "головная нефтеперекачивающая станция",
+      "en_preferred": "head oil pumping station",
+      "ru_aliases": [
+        "головной нефтеперекачивающей станции",
+        "ГНПС"
+      ],
+      "en_allowed": [
+        "HOPS"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pumping_stations.",
+      "domain": "pumping_stations",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_real_gold_v001_pair_2765_sample_01",
+        "kaztransoil_real_gold_v001_pair_5173_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0076",
+      "ru_term": "насосная станция",
+      "en_preferred": "pumping station",
+      "ru_aliases": [
+        "насосной станции",
+        "насосных станций"
+      ],
+      "en_allowed": [
+        "pump station"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pumping_stations.",
+      "domain": "pumping_stations",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240809_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0077",
+      "ru_term": "нефтеперекачивающая станция",
+      "en_preferred": "oil pumping station",
+      "ru_aliases": [
+        "нефтеперекачивающей станции",
+        "нефтеперекачивающих станций",
+        "НПС"
+      ],
+      "en_allowed": [
+        "pump station",
+        "PS",
+        "OPS"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена pumping_stations.",
+      "domain": "pumping_stations",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0001",
+        "transneft_core_v001_0008",
+        "cpc_real_gold_v001_pair_20240409_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0078",
+      "ru_term": "резервуар",
+      "en_preferred": "tank",
+      "ru_aliases": [
+        "резервуара",
+        "резервуаров",
+        "резервуары"
+      ],
+      "en_allowed": [
+        "storage tank"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена reservoir_farms.",
+      "domain": "reservoir_farms",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240827_sample_01",
+        "cpc_v002_pair_0011_sample_01",
+        "kaztransoil_real_gold_v001_pair_4202_sample_01",
+        "kaztransoil_real_gold_v001_pair_5037_sample_01",
+        "kaztransoil_real_gold_v001_pair_5060_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0079",
+      "ru_term": "резервуарный парк",
+      "en_preferred": "tank farm",
+      "ru_aliases": [
+        "резервуарного парка",
+        "резервуарном парке",
+        "резервуарные парки"
+      ],
+      "en_allowed": [
+        "tank farms"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена reservoir_farms.",
+      "domain": "reservoir_farms",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240809_sample_03",
+        "cpc_v002_pair_0002_sample_02",
+        "cpc_v002_pair_0011_sample_01",
+        "cpc_v002_pair_0015_sample_02",
+        "kaztransoil_real_gold_v001_pair_4202_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0080",
+      "ru_term": "Программа устранения узких мест",
+      "en_preferred": "Debottlenecking Program",
+      "ru_aliases": [
+        "Программы устранения узких мест",
+        "ПУУМ"
+      ],
+      "en_allowed": [
+        "DBNP"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена throughput_capacity.",
+      "domain": "throughput_capacity",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_v002_pair_0001_sample_01",
+        "cpc_v002_pair_0001_sample_02",
+        "cpc_v002_pair_0001_sample_03",
+        "cpc_v002_pair_0003_sample_01",
+        "cpc_v002_pair_0007_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0081",
+      "ru_term": "производительность",
+      "en_preferred": "capacity",
+      "ru_aliases": [
+        "производительности"
+      ],
+      "en_allowed": [
+        "throughput",
+        "performance"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена throughput_capacity.",
+      "domain": "throughput_capacity",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_v002_pair_0001_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0082",
+      "ru_term": "пропускная способность",
+      "en_preferred": "throughput capacity",
+      "ru_aliases": [
+        "пропускной способности"
+      ],
+      "en_allowed": [
+        "capacity"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена throughput_capacity.",
+      "domain": "throughput_capacity",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_v002_pair_0001_sample_02",
+        "kaztransoil_v002_pair_0003_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0083",
+      "ru_term": "тонна в год",
+      "en_preferred": "tonnes per year",
+      "ru_aliases": [
+        "тонн в год"
+      ],
+      "en_allowed": [
+        "tons per year"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена throughput_capacity.",
+      "domain": "throughput_capacity",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_real_gold_v001_pair_2765_sample_01",
+        "kaztransoil_real_gold_v001_pair_2765_sample_02",
+        "kaztransoil_v002_pair_0001_sample_02",
+        "kaztransoil_v002_pair_0009_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0084",
+      "ru_term": "АО «КазТрансОйл»",
+      "en_preferred": "KazTransOil JSC",
+      "ru_aliases": [
+        "АО КазТрансОйл",
+        "КазТрансОйл"
+      ],
+      "en_allowed": [
+        "KazTransOil"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transit_routes.",
+      "domain": "transit_routes",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_real_gold_v001_pair_2765_sample_01",
+        "kaztransoil_real_gold_v001_pair_2816_sample_01",
+        "kaztransoil_real_gold_v001_pair_2851_sample_01",
+        "kaztransoil_real_gold_v001_pair_2851_sample_03",
+        "kaztransoil_real_gold_v001_pair_3398_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0085",
+      "ru_term": "Каспийский регион",
+      "en_preferred": "Caspian Region",
+      "ru_aliases": [
+        "Каспии",
+        "Каспийском регионе"
+      ],
+      "en_allowed": [
+        "Caspian"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transit_routes.",
+      "domain": "transit_routes",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240729_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_03",
+        "cpc_real_gold_v001_pair_20240827_sample_02",
+        "cpc_real_gold_v001_pair_20241024_sample_02",
+        "cpc_real_gold_v001_pair_20241114_sample_03"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0086",
+      "ru_term": "Каспийский Трубопроводный Консорциум",
+      "en_preferred": "Caspian Pipeline Consortium",
+      "ru_aliases": [
+        "КТК"
+      ],
+      "en_allowed": [
+        "CPC"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transit_routes.",
+      "domain": "transit_routes",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0005",
+        "cpc_real_gold_v001_pair_20240729_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_03",
+        "cpc_real_gold_v001_pair_20240827_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0087",
+      "ru_term": "маршрут транспортировки",
+      "en_preferred": "transportation route",
+      "ru_aliases": [
+        "маршруту транспортировки"
+      ],
+      "en_allowed": [
+        "route"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transit_routes.",
+      "domain": "transit_routes",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_v002_pair_0012_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0088",
+      "ru_term": "месторождение",
+      "en_preferred": "oil field",
+      "ru_aliases": [
+        "месторождений",
+        "месторождения"
+      ],
+      "en_allowed": [
+        "oil fields",
+        "field"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transit_routes.",
+      "domain": "transit_routes",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240729_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_03",
+        "cpc_real_gold_v001_pair_20240827_sample_02",
+        "cpc_real_gold_v001_pair_20241024_sample_02",
+        "cpc_real_gold_v001_pair_20241114_sample_03"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0089",
+      "ru_term": "нефтепровод Атырау — Самара",
+      "en_preferred": "Atyrau–Samara oil pipeline",
+      "ru_aliases": [
+        "нефтепровода Атырау-Самара",
+        "Атырау – Самара"
+      ],
+      "en_allowed": [
+        "Atyrau-Samara pipeline"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transit_routes.",
+      "domain": "transit_routes",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_real_gold_v001_pair_2816_sample_01",
+        "kaztransoil_real_gold_v001_pair_3693_sample_01",
+        "kaztransoil_real_gold_v001_pair_4001_sample_01",
+        "kaztransoil_real_gold_v001_pair_4001_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0090",
+      "ru_term": "нефтепровод Тенгиз — Новороссийск",
+      "en_preferred": "Tengiz–Novorossiysk pipeline",
+      "ru_aliases": [
+        "нефтепровода Тенгиз-Новороссийск",
+        "трубопровода Тенгиз – Новороссийск"
+      ],
+      "en_allowed": [
+        "Tengiz - Novorossiysk pipeline"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transit_routes.",
+      "domain": "transit_routes",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240729_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_03",
+        "cpc_real_gold_v001_pair_20240827_sample_02",
+        "cpc_real_gold_v001_pair_20241024_sample_02",
+        "cpc_real_gold_v001_pair_20241114_sample_03"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0091",
+      "ru_term": "Республика Казахстан",
+      "en_preferred": "Republic of Kazakhstan",
+      "ru_aliases": [
+        "Республики Казахстан"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transit_routes.",
+      "domain": "transit_routes",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0005",
+        "cpc_real_gold_v001_pair_20240409_sample_01",
+        "cpc_real_gold_v001_pair_20241024_sample_02",
+        "cpc_v002_pair_0002_sample_01",
+        "cpc_v002_pair_0002_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0092",
+      "ru_term": "Содружество Независимых Государств",
+      "en_preferred": "Commonwealth of Independent States",
+      "ru_aliases": [
+        "СНГ"
+      ],
+      "en_allowed": [
+        "CIS"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transit_routes.",
+      "domain": "transit_routes",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240729_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_03",
+        "cpc_real_gold_v001_pair_20240827_sample_02",
+        "cpc_real_gold_v001_pair_20241024_sample_02",
+        "cpc_real_gold_v001_pair_20241114_sample_03"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0093",
+      "ru_term": "экспортная нефть",
+      "en_preferred": "export oil",
+      "ru_aliases": [
+        "экспортной нефти"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transit_routes.",
+      "domain": "transit_routes",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "cpc_real_gold_v001_pair_20240729_sample_01",
+        "cpc_real_gold_v001_pair_20240809_sample_03",
+        "cpc_real_gold_v001_pair_20240827_sample_02",
+        "cpc_real_gold_v001_pair_20241114_sample_03",
+        "cpc_real_gold_v001_pair_20241122_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0094",
+      "ru_term": "акционер",
+      "en_preferred": "shareholder",
+      "ru_aliases": [
+        "акционеров",
+        "акционеры"
+      ],
+      "en_allowed": [
+        "shareholders"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transneft_corporate.",
+      "domain": "transneft_corporate",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0005",
+        "cpc_real_gold_v001_pair_20241114_sample_01",
+        "cpc_real_gold_v001_pair_20241114_sample_02",
+        "cpc_v002_pair_0001_sample_01",
+        "cpc_v002_pair_0001_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0095",
+      "ru_term": "вице-президент",
+      "en_preferred": "Vice President",
+      "ru_aliases": [
+        "вице-президента"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transneft_corporate.",
+      "domain": "transneft_corporate",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0001",
+        "transneft_core_v001_0002",
+        "transneft_core_v001_0003",
+        "transneft_core_v001_0004",
+        "transneft_core_v001_0006"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0096",
+      "ru_term": "генеральный директор",
+      "en_preferred": "General Director",
+      "ru_aliases": [
+        "генерального директора"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transneft_corporate.",
+      "domain": "transneft_corporate",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0010",
+        "cpc_v002_pair_0007_sample_01",
+        "cpc_v002_pair_0007_sample_02",
+        "cpc_v002_pair_0013_sample_01",
+        "kaztransoil_real_gold_v001_pair_2851_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0097",
+      "ru_term": "годовое общее собрание акционеров",
+      "en_preferred": "Annual General Meeting of Shareholders",
+      "ru_aliases": [
+        "годовые общие собрания акционеров"
+      ],
+      "en_allowed": [
+        "annual general meetings of shareholders"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transneft_corporate.",
+      "domain": "transneft_corporate",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0005",
+        "transneft_v002_pair_0002_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0098",
+      "ru_term": "дорожная карта",
+      "en_preferred": "roadmap",
+      "ru_aliases": [
+        "дорожную карту"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transneft_corporate.",
+      "domain": "transneft_corporate",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0002",
+        "transneft_core_v001_0007",
+        "transneft_pair_0001_sample_02",
+        "transneft_v002_pair_0004_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0099",
+      "ru_term": "дочернее общество",
+      "en_preferred": "subsidiary",
+      "ru_aliases": [
+        "дочернего общества"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transneft_corporate.",
+      "domain": "transneft_corporate",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0003",
+        "transneft_pair_0004_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0100",
+      "ru_term": "Китайская национальная нефтегазовая корпорация",
+      "en_preferred": "China National Petroleum Corporation",
+      "ru_aliases": [
+        "CNPC"
+      ],
+      "en_allowed": [
+        "CNPC"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transneft_corporate.",
+      "domain": "transneft_corporate",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0003",
+        "kaztransoil_real_gold_v001_pair_5094_sample_01",
+        "transneft_pair_0004_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0101",
+      "ru_term": "Международная ассоциация транспортировщиков нефти",
+      "en_preferred": "International Association of Oil Transporters",
+      "ru_aliases": [
+        "МАТН"
+      ],
+      "en_allowed": [
+        "IAOT"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transneft_corporate.",
+      "domain": "transneft_corporate",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0003",
+        "transneft_pair_0004_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0102",
+      "ru_term": "нормативный документ",
+      "en_preferred": "regulatory document",
+      "ru_aliases": [
+        "нормативных документах",
+        "нормативные документы"
+      ],
+      "en_allowed": [
+        "regulations"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transneft_corporate.",
+      "domain": "transneft_corporate",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0002",
+        "transneft_pair_0001_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0103",
+      "ru_term": "ПАО «Транснефть»",
+      "en_preferred": "Transneft",
+      "ru_aliases": [
+        "ПАО Транснефть",
+        "Транснефть"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transneft_corporate.",
+      "domain": "transneft_corporate",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0001",
+        "transneft_core_v001_0002",
+        "transneft_core_v001_0003",
+        "transneft_core_v001_0004",
+        "transneft_core_v001_0006"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0104",
+      "ru_term": "первый вице-президент",
+      "en_preferred": "First Vice President",
+      "ru_aliases": [
+        "первого вице-президента"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transneft_corporate.",
+      "domain": "transneft_corporate",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0001",
+        "transneft_pair_0001_sample_01",
+        "transneft_v002_pair_0007_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0105",
+      "ru_term": "правление",
+      "en_preferred": "Management Board",
+      "ru_aliases": [
+        "Правления"
+      ],
+      "en_allowed": [
+        "Governing Board"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transneft_corporate.",
+      "domain": "transneft_corporate",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0003",
+        "transneft_core_v001_0006",
+        "kaztransoil_real_gold_v001_pair_5632_sample_01",
+        "kaztransoil_real_gold_v001_pair_5655_sample_01",
+        "kaztransoil_v002_pair_0011_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0106",
+      "ru_term": "производственная культура",
+      "en_preferred": "production culture",
+      "ru_aliases": [
+        "производственной культуры"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transneft_corporate.",
+      "domain": "transneft_corporate",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0001",
+        "transneft_pair_0001_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0107",
+      "ru_term": "профессиональные компетенции",
+      "en_preferred": "professional competencies",
+      "ru_aliases": [
+        "профессиональных компетенций"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transneft_corporate.",
+      "domain": "transneft_corporate",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0001",
+        "transneft_pair_0001_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0108",
+      "ru_term": "Российская Федерация",
+      "en_preferred": "Russian Federation",
+      "ru_aliases": [
+        "Российской Федерации"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transneft_corporate.",
+      "domain": "transneft_corporate",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0007",
+        "transneft_core_v001_0013",
+        "transneft_core_v001_0015",
+        "cpc_real_gold_v001_pair_20241114_sample_02",
+        "cpc_v002_pair_0004_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0109",
+      "ru_term": "совет директоров",
+      "en_preferred": "Board of Directors",
+      "ru_aliases": [
+        "Совета директоров"
+      ],
+      "en_allowed": [
+        "board of directors"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transneft_corporate.",
+      "domain": "transneft_corporate",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0005",
+        "kaztransoil_v002_pair_0007_sample_01",
+        "transneft_v002_pair_0002_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0110",
+      "ru_term": "совместное предприятие",
+      "en_preferred": "joint venture",
+      "ru_aliases": [
+        "совместного предприятия"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transneft_corporate.",
+      "domain": "transneft_corporate",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_real_gold_v001_pair_5094_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0111",
+      "ru_term": "стратегическая сессия",
+      "en_preferred": "strategic session",
+      "ru_aliases": [
+        "стратегической сессии"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transneft_corporate.",
+      "domain": "transneft_corporate",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0011",
+        "transneft_v002_pair_0009_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0112",
+      "ru_term": "финансовая отчётность",
+      "en_preferred": "financial statements",
+      "ru_aliases": [
+        "финансовая отчетность",
+        "финансовой отчётности",
+        "финансовой отчетности"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transneft_corporate.",
+      "domain": "transneft_corporate",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "transneft_core_v001_0005",
+        "transneft_v002_pair_0002_sample_01"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0113",
+      "ru_term": "чистая прибыль",
+      "en_preferred": "net profit",
+      "ru_aliases": [
+        "чистой прибыли"
+      ],
+      "en_allowed": [],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transneft_corporate.",
+      "domain": "transneft_corporate",
+      "priority": "preferred",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_real_gold_v001_pair_2851_sample_03"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0114",
+      "ru_term": "без НДС",
+      "en_preferred": "excluding VAT",
+      "ru_aliases": [
+        "без учета НДС"
+      ],
+      "en_allowed": [
+        "VAT excluded"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Официально подтверждённый термин домена transportation_tariffs.",
+      "domain": "transportation_tariffs",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "official_parallel_pages",
+      "source_sample_ids": [
+        "kaztransoil_real_gold_v001_pair_4160_sample_01",
+        "kaztransoil_real_gold_v001_pair_4777_sample_01",
+        "kaztransoil_real_gold_v001_pair_5094_sample_01",
+        "kaztransoil_v002_pair_0011_sample_01",
+        "kaztransoil_v002_pair_0011_sample_02"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "codex_parallel_evidence_review_v001",
+      "updated_at": "2026-08-03T18:00:00+03:00",
+      "notes": "RU и EN формы совместно зафиксированы в разрешённой официальной параллельной публикации.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0115",
+      "ru_term": "линейная производственно-диспетчерская станция",
+      "en_preferred": "line operation dispatcher station",
+      "ru_aliases": [
+        "линейной производственно-диспетчерской станции",
+        "ЛПДС"
+      ],
+      "en_allowed": [
+        "LODS"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Производственный объект линейной эксплуатации и диспетчеризации трубопроводного транспорта.",
+      "domain": "pumping_stations",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "transneft_core_v002_development",
+      "source_sample_ids": [
+        "transneft_core_v002_0142",
+        "transneft_core_v002_0143"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "manual_source_trusted",
+      "updated_at": "2026-08-05T12:00:00+03:00",
+      "notes": "Подтверждено параллельной ручной RU/EN-парой development; URL не требуются по указанию пользователя.",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0116",
+      "ru_term": "Служба управления данными",
+      "en_preferred": "Data Management Service (DMS)",
+      "ru_aliases": [
+        "СУД",
+        "службы управления данными",
+        "службе управления данными",
+        "для СУД"
+      ],
+      "en_allowed": [
+        "DMS"
+      ],
+      "en_forbidden": [
+        "Court",
+        "Judiciary"
+      ],
+      "definition_ru": "Служба управления данными ПАО Транснефть.",
+      "domain": "it_infrastructure",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "corporate_it_portal",
+      "source_sample_ids": [
+        "it_portal_001"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "egor",
+      "updated_at": "2026-08-14T15:00:00+03:00",
+      "notes": "Исключает ошибочный перевод СУД как Court/Judiciary",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0117",
+      "ru_term": "Корпоративная информационная система управления ИТ-архитектурой и требованиями",
+      "en_preferred": "CIS ITARM (IT Architecture and Requirements Management System)",
+      "ru_aliases": [
+        "КИС УАТ",
+        "системы КИС УАТ",
+        "КИС УАТ ПАО «Транснефть»"
+      ],
+      "en_allowed": [
+        "CIS ITARM"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Корпоративная информационная система управления ИТ-архитектурой и требованиями.",
+      "domain": "it_infrastructure",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "corporate_it_portal",
+      "source_sample_ids": [
+        "it_portal_002"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "egor",
+      "updated_at": "2026-08-14T15:00:00+03:00",
+      "notes": "Система управления ИТ-архитектурой",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0118",
+      "ru_term": "Единая платформа производственной отчетности",
+      "en_preferred": "UPRP (Unified Production Reporting Platform)",
+      "ru_aliases": [
+        "ЕППО",
+        "платформы ЕППО",
+        "системе ЕППО"
+      ],
+      "en_allowed": [
+        "UPRP"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Система подготовки и согласования отчетов по производственной деятельности.",
+      "domain": "it_infrastructure",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "corporate_it_portal",
+      "source_sample_ids": [
+        "it_portal_003"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "egor",
+      "updated_at": "2026-08-14T15:00:00+03:00",
+      "notes": "Единая платформа производственной отчетности",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0119",
+      "ru_term": "Информационная система управления нормативной документацией АСУТП",
+      "en_preferred": "ISUND APCS (Automated Process Control System Regulatory Documentation Management System)",
+      "ru_aliases": [
+        "ИСУНД АСУТП",
+        "системе ИСУНД АСУТП"
+      ],
+      "en_allowed": [
+        "ISUND APCS"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Информационная система управления нормативной документацией АСУТП.",
+      "domain": "it_infrastructure",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "corporate_it_portal",
+      "source_sample_ids": [
+        "it_portal_004"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "egor",
+      "updated_at": "2026-08-14T15:00:00+03:00",
+      "notes": "Управление нормативной документацией АСУТП",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0120",
+      "ru_term": "Система управления ИТ-активами",
+      "en_preferred": "ITAMS (IT Asset Management System)",
+      "ru_aliases": [
+        "КАСУА",
+        "системы КАСУА"
+      ],
+      "en_allowed": [
+        "ITAMS"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Система управления ИТ-активами.",
+      "domain": "it_infrastructure",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "corporate_it_portal",
+      "source_sample_ids": [
+        "it_portal_005"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "egor",
+      "updated_at": "2026-08-14T15:00:00+03:00",
+      "notes": "Управление ИТ-активами",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0121",
+      "ru_term": "Система планирования и контроля",
+      "en_preferred": "PCS (Planning and Control System)",
+      "ru_aliases": [
+        "СПИК",
+        "системе СПИК"
+      ],
+      "en_allowed": [
+        "PCS"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Система планирования и контроля.",
+      "domain": "it_infrastructure",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "corporate_it_portal",
+      "source_sample_ids": [
+        "it_portal_006"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "egor",
+      "updated_at": "2026-08-14T15:00:00+03:00",
+      "notes": "Планирование и контроль",
+      "version": "transneft_glossary_v002"
+    },
+    {
+      "term_id": "tn_0122",
+      "ru_term": "Корпоративная информационная система «Электронный архив документов»",
+      "en_preferred": "CIS EDA (Electronic Document Archive)",
+      "ru_aliases": [
+        "КИС ЭАД",
+        "МАДОК",
+        "КИС ЭАД (МАДОК)"
+      ],
+      "en_allowed": [
+        "CIS EDA"
+      ],
+      "en_forbidden": [],
+      "definition_ru": "Корпоративная информационная система Электронный архив документов.",
+      "domain": "it_infrastructure",
+      "priority": "mandatory",
+      "case_sensitive": false,
+      "whole_word": true,
+      "match_mode": "exact",
+      "source_type": "corporate_it_portal",
+      "source_sample_ids": [
+        "it_portal_007"
+      ],
+      "source_urls": [],
+      "status": "approved",
+      "reviewer": "egor",
+      "updated_at": "2026-08-14T15:00:00+03:00",
+      "notes": "Электронный архив документов",
+      "version": "transneft_glossary_v002"
+    }
+  ]
+}
