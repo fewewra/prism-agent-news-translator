@@ -1,0 +1,250 @@
+{
+    "openapi": "3.1.0",
+    "info": {
+        "title": "PRISM-LLM Translator API",
+        "description": "API для перевода новостей ЕТП с внедрением корпоративного глоссария.",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/v1/translate": {
+            "post": {
+                "summary": "Перевод новости",
+                "description": "Эндпоинт принимает JSON с частями новости и опциональным глоссарием.\nВозвращает переведенный текст со строгим сохранением структуры. ",
+                "operationId": "translate_news_api_v1_translate_post",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/TranslationRequest"
+                            }
+                        }
+                    },
+                "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/TranslationResponse"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "APIKeyHeader": []
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "HTTPValidationError": {
+                "properties": {
+                    "detail": {
+                        "Items": {
+                            "$ref": "#/components/schemas/ValidationError"
+                        },
+                        "type": "array",
+                        "title": "Detail"
+                    }
+                },
+                "type": "object",
+                "title": "HTTPValidationError"
+            },
+            "TranslationMeta": {
+                "properties": {
+                    "model_used": {
+                        "type": "string",
+                        "title" : "Model Used",
+                        "description": "Название ИИ-модели, выполнившей перевод"
+                    },
+                    "processing_time_ms": {
+                        "type": "integer",
+                        "title": "Processing Time Ms",
+                        "description": "Время обработки запроса в миллисекундах"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "model_used",
+                    "processing_time_ms"
+                ],
+                "title": "TranslationMeta"
+            },
+            "TranslationRequest": {
+                "properties": {
+                    "news_id": {
+                        "type": "integer",
+                        "title": "News Id",
+                        "description": "Уникальный идентификатор новости в Битрикс для сквозной трассировки"
+                    },
+                    "title": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Title",
+                        "description": "Заголовок новости"
+                    },
+                    "announce": {
+                        "anyOf" : [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "title": "Announce",
+                    "description": "Краткий анонс"
+                },
+                "detail_text": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "title": "Detail Text",
+                    "description": "Полный текст новости с HTML-разметкой"
+                },
+                "glossary": {
+                    "anyOf": [
+                        {
+                            "additionalProperties": {
+                                "type": "string"
+                            },
+                            "type": "object"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "title": "Glossary",
+                    "description": "Словарь терминов. Ключ - русский термин, значение - английский перевод"
+                }
+            },
+            "type": "object",
+            "required": [
+                "news_id"
+            ],
+            "title": "TranslationRequest"
+        },
+        "TranslationResponse": {
+            "properties": {
+                "news_id": {
+                    "type": "integer",
+                    "title": "News Id",
+                    "description": "Идентификатор НОВОСТИ из запроса"
+                },
+                "translated title": {
+                    "anyof": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type" : "null"
+                        }
+                    ],
+                    "title": "Translated Title",
+                    "description": "Переведенный заголовок"
+                },
+                "translated _announce": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "title": "Translated Announce",
+                    "description": "Переведенный анонс"
+                },
+                "translated detail_text": {
+                    "anyOf" : [
+                        {
+                        "type":"string"
+                        },
+                        {
+                            "type":"null"
+                        }
+                    ],
+                    "title": "Translated Detail Text",
+                    "description": "Переведенный полный текст"
+                },
+                "meta": {
+                    "fref": "#/components/schemas/TranslationMeta"
+                }
+            },
+            "type": "object",
+            "required": [
+                "news_id",
+                "meta"
+            ],
+            "title": "TranslationResponse"
+        },
+        "ValidationError": {
+            "properties": {
+                "loc": {
+                    "items": {
+                        "anyOf" : [
+                            {
+                                "type": "string",
+                            },
+                            {
+                            "type": "integer"
+                            }
+                        ]
+                    },
+                    "type": "array",
+                    "title": "Location"
+                },
+                "msg": {
+                    "type": "string",
+                    "title": "Message"
+                },
+                "type": {
+                    "type": "string",
+                    "title": "Error Type"
+                }
+            },
+                "type": "object",
+                "required": [
+                        "loc",
+                        "msg",
+                        "type"
+                ],
+                "title": "ValidationError"
+            }
+        },
+        "securitySchemes": {
+            "APIKeyHeader" : {
+                "type": "apiKey",
+                "in": "header",
+                "name": "X-API-Key"
+            }
+        }
+    }
+}

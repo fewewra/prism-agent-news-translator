@@ -1,0 +1,107 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Transneft News Translator API",
+    "description": "Микросервис машинного перевода новостей с русского на английский язык с поддержкой глоссария и M2M-авторизации.",
+    "version": "0.1.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8000",
+      "description": "Локальное окружение разработки"
+    }
+  ],
+  "paths": {
+    "/health": {
+      "get": {
+        "summary": "Healthcheck",
+        "description": "Проверка работоспособности сервиса.",
+        "responses": {
+          "200": {
+            "description": "Сервис готов к работе",
+            "content": {
+              "application/json": {
+                "example": { "status": "ok" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/translate": {
+      "post": {
+        "summary": "Перевод новости RU -> EN",
+        "description": "Принимает заголовок и текст новости на русском языке, выполняет детерминированный перевод с опциональной интеграцией корпоративного глоссария.",
+        "parameters": [
+          {
+            "name": "X-API-Key",
+            "in": "header",
+            "required": true,
+            "schema": { "type": "string" },
+            "description": "Статический M2M-токен авторизации (BITRIX_AUTH_TOKEN)"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["title", "body"],
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 1000,
+                    "example": "Завод ПАО «Транснефть» разработал электродвигатель для ледокола"
+                  },
+                  "body": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 50000,
+                    "example": "АО «Транснефть - Верхняя Волга» завершило плановые ремонтные работы..."
+                  },
+                  "glossary_mode": {
+                    "type": "string",
+                    "enum": ["disabled", "retrieved_top3", "retrieved_top5", "retrieved_top10"],
+                    "default": "disabled",
+                    "description": "Режим подключения терминов глоссария"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Успешный перевод",
+            "content": {
+              "application/json": {
+                "example": {
+                  "request_id": "a1b2c3d4e5f67890",
+                  "title_translated": "The Transneft plant has developed an electric motor for an icebreaker.",
+                  "body_translated": "Transneft-Verkhnyaya Volga JSC has completed scheduled maintenance...",
+                  "glossary_terms_applied": [
+                    {
+                      "term_id": "tn_0001",
+                      "ru_term": "экологическая безопасность",
+                      "en_preferred": "environmental safety"
+                    }
+                  ],
+                  "model_name": "milmmt-12b-mlx-4bit-local",
+                  "processing_time_sec": 3.296
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Неверный или отсутствующий X-API-Key"
+          },
+          "422": {
+            "description": "Ошибка валидации входных данных (пустые поля, слишком длинный текст)"
+          }
+        }
+      }
+    }
+  }
+}

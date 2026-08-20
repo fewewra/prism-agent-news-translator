@@ -1,0 +1,30 @@
+graph TD
+    Client["Внешний веб-портал (1С-Битрикс)"]
+    
+    subgraph FastAPI_Microservice["FastAPI Микросервис (Stateless)"]
+        Router["APIRouter (/api/v1/translate)"]
+        Security["Security (X-API-Key HMAC)"]
+        TransSvc["TranslationService (Orchestrator)"]
+        GlossarySvc["GlossaryService (pymorphy3 Lemmatizer)"]
+        PromptSvc["PromptService (Fidelity Prompt Builder)"]
+        LLMClient{"LLMClient (Factory)"}
+    end
+    
+    subgraph GlossaryData["Конфигурация"]
+        RuntimeJSON["transneft_glossary_v002.runtime.json (115 terms)"]
+    end
+
+    subgraph LLM_Backends["LLM Инференс (Переключается через .env)"]
+        LocalMLX["LocalMLXClient (MiLMMT 12B 4-bit)"]
+        LiteLLM["LiteLLMClient (OpenAI API / Corporate Proxy)"]
+    end
+
+    Client -- "POST /api/v1/translate (X-API-Key)" --> Security
+    Security --> Router
+    Router --> TransSvc
+    TransSvc --> GlossarySvc
+    GlossarySvc --> RuntimeJSON
+    TransSvc --> PromptSvc
+    TransSvc --> LLMClient
+    LLMClient -- "LLM_BACKEND=local" --> LocalMLX
+    LLMClient -- "LLM_BACKEND=litellm" --> LiteLLM

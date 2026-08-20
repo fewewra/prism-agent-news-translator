@@ -1,0 +1,26 @@
+sequenceDiagram
+    autonumber
+    actor Bitrix as Веб-портал (Битрикс)
+    participant API as FastAPI Router
+    participant Sec as Security (X-API-Key)
+    participant TS as TranslationService
+    participant GS as GlossaryService (pymorphy3)
+    participant PS as PromptService
+    participant LLM as LLMClient (MLX / LiteLLM)
+
+    Bitrix->>API: POST /api/v1/translate (JSON payload + X-API-Key)
+    API->>Sec: verify_api_key(x_api_key)
+    alt Неверный ключ
+        Sec-->>Bitrix: 401 Unauthorized
+    end
+    API->>TS: translate(TranslationRequest)
+    TS->>GS: match_terms(text, limit)
+    Note over GS: Лемматизация слов текста через pymorphy3<br/>Поиск пересечений с индексами терминов
+    GS-->>TS: list[GlossaryTerm]
+    TS->>PS: build_user_prompt(title/body, terms)
+    PS-->>TS: user_prompt_string
+    TS->>LLM: generate(SYSTEM_PROMPT, user_prompt)
+    Note over LLM: Инференс MiLMMT 12B (Local)<br/>или запрос к LiteLLM-прокси
+    LLM-->>TS: translation_text
+    TS-->>API: TranslationResponse
+    API-->>Bitrix: 200 OK (JSON с переводом и метриками)
