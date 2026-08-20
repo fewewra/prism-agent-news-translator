@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+.venv/
+venv/
+
+# Environment configuration
+.env
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Large binary model weights
+models/milmmt/
+models/*
+
+# Legacy research archives and temporary handoffs
+archive_unneeded/
+archive_unneeded/*
+*.docx
+
+# Test & coverage cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS metadata
+Thumbs.db
