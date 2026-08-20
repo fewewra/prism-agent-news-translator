@@ -1,0 +1,9 @@
+[project]
+name = "transneft-news-translator"
+version = "0.1.0"
+description = "Микросервис машинного перевода RU→EN для корпоративных новостей"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+pythonpath = ["."]
