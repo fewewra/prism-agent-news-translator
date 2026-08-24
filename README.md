@@ -50,18 +50,50 @@ docker compose up --build
 - `GET /health` — Проверка состояния сервиса (Healthcheck)
 - `GET /docs` — Спецификация и интерактивная документация Swagger UI
 
-### Пример запроса на перевод
+### Пример запроса на перевод (из демо-набора ИТ-новостей)
 
 ```bash
 curl -X POST http://localhost:8000/api/v1/translate \
   -H "Content-Type: application/json" \
   -H "X-API-Key: dev-token-change-me" \
   -d '{
-    "news_id": 1001,
-    "title": "ПАО «Транснефть» ввело в эксплуатацию новую перекачивающую станцию",
-    "announce": "В рамках программы модернизации СУД завершены пусконаладочные работы.",
-    "detail_text": "<p>Специалисты КИС УАТ проверили работу систем промышленной безопасности.</p>"
+    "news_id": 701,
+    "title": "Выделение вычислительных мощностей для Службы управления данными (СУД)",
+    "announce": "В рамках обеспечения бесперебойной работы сервисов КИС УАТ и ЕППО выделены дополнительные ресурсы.",
+    "detail_text": "Для СУД были выделены дополнительные вычислительные мощности, включающие Linux-сервер с тремя ускорителями NVIDIA A100 и более чем 324 ГБ ОЗУ."
   }'
+```
+
+### Пример ответа сервиса
+
+```json
+{
+  "news_id": 701,
+  "translated_title": "Allocation of Computing Capacities for the Data Management Service (DMS)",
+  "translated_announce": "Additional resources have been allocated to ensure uninterrupted operation of CIS ITARM and UPRP services.",
+  "translated_detail_text": "Additional computing capacities have been allocated for DMS, including a Linux server with three NVIDIA A100 accelerators and over 324 GB of RAM.",
+  "meta": {
+    "model_used": "milmmt-12b-mlx-4bit-local",
+    "processing_time_ms": 2840,
+    "terms_applied": [
+      {
+        "term_id": "tn_0042",
+        "ru_term": "Служба управления данными",
+        "en_preferred": "Data Management Service (DMS)"
+      },
+      {
+        "term_id": "tn_0089",
+        "ru_term": "КИС УАТ",
+        "en_preferred": "CIS ITARM"
+      },
+      {
+        "term_id": "tn_0091",
+        "ru_term": "ЕППО",
+        "en_preferred": "UPRP"
+      }
+    ]
+  }
+}
 ```
 
 ---
