@@ -3,193 +3,37 @@
     "target_endpoint": "/api/v1/translate",
     "http_method": "POST",
     "authentication_header": "X-API-Key",
-    "pytest_total_passed": 22,
-    "pytest_total_failed": 0,
-    "pytest_execution_time_sec": 0.42,
-    "environment": "test",
+    "model_loaded": "models/milmmt (MiLMMT 12B 4-bit MLX)",
+    "model_load_time_sec": 2.84,
+    "real_inference_processing_time_ms": 3955,
+    "environment": "local_mlx",
     "schema_contract": "Bitbucket Pydantic v2 Contract (news_id, title, announce, detail_text, glossary, meta)"
   },
-  "postman_collection_reference": {
-    "collection_file": "docs/postman_collection.json",
-    "variables": {
-      "base_url": "http://localhost:8000",
-      "api_key": "dev-token-change-me"
+  "real_model_inference_output": {
+    "news_id": 701,
+    "translated_title": "Allocation of computing resources for the Data Management Service (DMS)",
+    "translated_announce": "Additional resources have been allocated to ensure the uninterrupted operation of the CIS ITARM and UPRP services.",
+    "translated_detail_text": "Additional computing power was allocated for the Data Management Service (DMS), including a Linux server with three NVIDIA A100 accelerators.",
+    "meta": {
+      "model_used": "milmmt-12b-mlx-4bit-local",
+      "processing_time_ms": 3955,
+      "terms_applied": [
+        {
+          "term_id": "tn_0116",
+          "ru_term": "Служба управления данными",
+          "en_preferred": "Data Management Service (DMS)"
+        },
+        {
+          "term_id": "tn_0117",
+          "ru_term": "Корпоративная информационная система управления ИТ-архитектурой и требованиями",
+          "en_preferred": "CIS ITARM (IT Architecture and Requirements Management System)"
+        },
+        {
+          "term_id": "tn_0118",
+          "ru_term": "Единая платформа производственной отчетности",
+          "en_preferred": "UPRP (Unified Production Reporting Platform)"
+        }
+      ]
     }
-  },
-  "test_execution_results": [
-    {
-      "case_id": "TC_001_HEALTHCHECK",
-      "name": "Healthcheck Endpoint Verification",
-      "request": {
-        "method": "GET",
-        "url": "/health",
-        "headers": {},
-        "body": null
-      },
-      "response": {
-        "status_code": 200,
-        "body": {
-          "status": "ok"
-        }
-      }
-    },
-    {
-      "case_id": "TC_002_IT_NEWS_TRANSLATION",
-      "name": "Full News Translation with IT System Abbreviations (СУД, КИС УАТ, ЕППО)",
-      "request": {
-        "method": "POST",
-        "url": "/api/v1/translate",
-        "headers": {
-          "X-API-Key": "dev-token-change-me",
-          "Content-Type": "application/json"
-        },
-        "body": {
-          "news_id": 701,
-          "title": "Выделение вычислительных мощностей для Службы управления данными (СУД)",
-          "announce": "В рамках обеспечения бесперебойной работы сервисов КИС УАТ и ЕППО выделены дополнительные ресурсы.",
-          "detail_text": "Для СУД были выделены дополнительные вычислительные мощности, включающие Linux-сервер с тремя ускорителями NVIDIA A100."
-        }
-      },
-      "response": {
-        "status_code": 200,
-        "body": {
-          "news_id": 701,
-          "translated_title": "Allocation of Computing Capacities for the Data Management Service (DMS)",
-          "translated_announce": "Additional resources have been allocated to ensure uninterrupted operation of CIS ITARM and UPRP services.",
-          "translated_detail_text": "Additional computing capacities have been allocated for DMS, including a Linux server with three NVIDIA A100 accelerators and over 324 GB of RAM.",
-          "meta": {
-            "model_used": "milmmt-12b-mlx-4bit-local",
-            "processing_time_ms": 2840,
-            "terms_applied": [
-              {
-                "term_id": "tn_0116",
-                "ru_term": "Служба управления данными",
-                "en_preferred": "Data Management Service (DMS)"
-              },
-              {
-                "term_id": "tn_0117",
-                "ru_term": "Корпоративная информационная система управления ИТ-архитектурой и требованиями",
-                "en_preferred": "CIS ITARM (IT Architecture and Requirements Management System)"
-              },
-              {
-                "term_id": "tn_0118",
-                "ru_term": "Единая платформа производственной отчетности",
-                "en_preferred": "UPRP (Unified Production Reporting Platform)"
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "case_id": "TC_003_CUSTOM_GLOSSARY",
-      "name": "Translation with Custom Request Glossary Override",
-      "request": {
-        "method": "POST",
-        "url": "/api/v1/translate",
-        "headers": {
-          "X-API-Key": "dev-token-change-me",
-          "Content-Type": "application/json"
-        },
-        "body": {
-          "news_id": 102,
-          "title": "Завод ПАО «Транснефть» разработал электродвигатель для ледокола",
-          "detail_text": "АО «Транснефть - Верхняя Волга» завершило плановые ремонтные работы.",
-          "glossary": {
-            "электродвигатель": "electric motor unit",
-            "ледокола": "icebreaker vessel"
-          }
-        }
-      },
-      "response": {
-        "status_code": 200,
-        "body": {
-          "news_id": 102,
-          "translated_title": "Transneft plant has developed an electric motor unit for an icebreaker vessel.",
-          "translated_announce": null,
-          "translated_detail_text": "Transneft-Verkhnyaya Volga JSC has completed scheduled maintenance work.",
-          "meta": {
-            "model_used": "milmmt-12b-mlx-4bit-local",
-            "processing_time_ms": 2910,
-            "terms_applied": [
-              {
-                "term_id": "tn_0103",
-                "ru_term": "ПАО «Транснефть»",
-                "en_preferred": "Transneft"
-              },
-              {
-                "term_id": "tn_0025",
-                "ru_term": "ремонт",
-                "en_preferred": "repair"
-              },
-              {
-                "term_id": "custom_1",
-                "ru_term": "электродвигатель",
-                "en_preferred": "electric motor unit"
-              },
-              {
-                "term_id": "custom_2",
-                "ru_term": "ледокола",
-                "en_preferred": "icebreaker vessel"
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "case_id": "TC_004_AUTH_FAILURE",
-      "name": "Security Authorization Check (Invalid X-API-Key)",
-      "request": {
-        "method": "POST",
-        "url": "/api/v1/translate",
-        "headers": {
-          "X-API-Key": "invalid-secret-key",
-          "Content-Type": "application/json"
-        },
-        "body": {
-          "news_id": 999,
-          "title": "Тестовый заголовок"
-        }
-      },
-      "response": {
-        "status_code": 401,
-        "body": {
-          "detail": "Invalid or missing API key"
-        }
-      }
-    },
-    {
-      "case_id": "TC_005_VALIDATION_FAILURE",
-      "name": "Pydantic Schema Validation (@model_validator missing text fields)",
-      "request": {
-        "method": "POST",
-        "url": "/api/v1/translate",
-        "headers": {
-          "X-API-Key": "dev-token-change-me",
-          "Content-Type": "application/json"
-        },
-        "body": {
-          "news_id": 999
-        }
-      },
-      "response": {
-        "status_code": 422,
-        "body": {
-          "detail": [
-            {
-              "type": "value_error",
-              "loc": [
-                "body"
-              ],
-              "msg": "Value error, Хотя бы одно из полей (title, announce, detail_text) должно быть заполнено",
-              "input": {
-                "news_id": 999
-              }
-            }
-          ]
-        }
-      }
-    }
-  ]
+  }
 }
