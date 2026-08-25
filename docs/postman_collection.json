@@ -1,0 +1,180 @@
+{
+  "info": {
+    "_postman_id": "a1b2c3d4-e5f6-7890-abcd-1234567890ab",
+    "name": "PRISM-LLM Translator API (Bitbucket Contract)",
+    "description": "Коллекция запросов для тестирования микросервиса перевода новостей ЕТП (RU->EN).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8000",
+      "type": "string"
+    },
+    {
+      "key": "api_key",
+      "value": "dev-token-change-me",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "1. Healthcheck",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/health",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "health"
+          ]
+        },
+        "description": "Проверка доступности и статуса микросервиса."
+      },
+      "response": []
+    },
+    {
+      "name": "2. Перевод новости с ИТ-аббревиатурами (Успех 200)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "X-API-Key",
+            "value": "{{api_key}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"news_id\": 701,\n  \"title\": \"Выделение вычислительных мощностей для Службы управления данными (СУД)\",\n  \"announce\": \"В рамках обеспечения бесперебойной работы сервисов КИС УАТ и ЕППО выделены дополнительные ресурсы.\",\n  \"detail_text\": \"Для СУД были выделены дополнительные вычислительные мощности, включающие Linux-сервер с тремя ускорителями NVIDIA A100 и более чем 324 ГБ ОЗУ.\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/v1/translate",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "translate"
+          ]
+        },
+        "description": "Перевод новости с проверкой распознавания терминов глоссария (СУД, КИС УАТ, ЕППО)."
+      },
+      "response": []
+    },
+    {
+      "name": "3. Перевод новости с кастомным глоссарием",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "X-API-Key",
+            "value": "{{api_key}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"news_id\": 102,\n  \"title\": \"Завод ПАО «Транснефть» разработал электродвигатель для ледокола\",\n  \"detail_text\": \"АО «Транснефть - Верхняя Волга» завершило плановые ремонтные работы на станции.\",\n  \"glossary\": {\n    \"электродвигатель\": \"electric motor unit\",\n    \"ледокола\": \"icebreaker vessel\"\n  }\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/v1/translate",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "translate"
+          ]
+        },
+        "description": "Перевод с передачей пользовательского словаря терминов в поле glossary."
+      },
+      "response": []
+    },
+    {
+      "name": "4. Ошибка авторизации (Неверный X-API-Key -> 401)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "X-API-Key",
+            "value": "invalid-token",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"news_id\": 999,\n  \"title\": \"Тестовый заголовок\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/v1/translate",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "translate"
+          ]
+        },
+        "description": "Проверка отклонения запросов с неверным ключом."
+      },
+      "response": []
+    },
+    {
+      "name": "5. Ошибка валидации (Пустые текстовые поля -> 422)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "X-API-Key",
+            "value": "{{api_key}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"news_id\": 999\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/v1/translate",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "translate"
+          ]
+        },
+        "description": "Проверка срабатывания Pydantic @model_validator на отсутствие текстов."
+      },
+      "response": []
+    }
+  ]
+}
