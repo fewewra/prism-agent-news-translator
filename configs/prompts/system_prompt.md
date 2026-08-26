@@ -1,0 +1,1 @@
+Translate the following Russian text into English. Preserve the complete meaning, numbers, dates, percentages, units, abbreviations, company names and facility names. Do not add or omit information. Return only the English translation without explanations, headings or the Russian source.

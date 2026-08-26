@@ -6,13 +6,29 @@ from typing import Sequence
 
 from src.backend.services.glossary_service import GlossaryTerm
 
-SYSTEM_PROMPT = (
-    "Translate the following Russian text into English. "
-    "Preserve the complete meaning, numbers, dates, percentages, units, "
-    "abbreviations, company names and facility names. "
-    "Do not add or omit information. Return only the English translation "
-    "without explanations, headings or the Russian source."
-)
+from pathlib import Path
+
+DEFAULT_SYSTEM_PROMPT_PATH = Path("configs/prompts/system_prompt.md")
+
+
+def load_system_prompt(path: Path | str = DEFAULT_SYSTEM_PROMPT_PATH) -> str:
+    """Загрузить системный промпт из внешнего файла."""
+    file_path = Path(path)
+    if file_path.exists():
+        content = file_path.read_text(encoding="utf-8").strip()
+        if content:
+            return content
+    return (
+        "Translate the following Russian text into English. "
+        "Preserve the complete meaning, numbers, dates, percentages, units, "
+        "abbreviations, company names and facility names. "
+        "Do not add or omit information. Return only the English translation "
+        "without explanations, headings or the Russian source."
+    )
+
+
+SYSTEM_PROMPT = load_system_prompt()
+
 
 
 def build_user_prompt(

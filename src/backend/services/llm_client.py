@@ -97,6 +97,19 @@ class LiteLLMClient(BaseLLMClient):
         return self._target_model
 
 
+class MockLLMClient(BaseLLMClient):
+    """Мок LLM-клиент для Docker / CI тестирования без локальной модели."""
+
+    def __init__(self, name: str = "mock-milmmt-12b") -> None:
+        self._name = name
+
+    async def generate(self, system_prompt: str, user_prompt: str) -> str:
+        return "[Mock Translation] Successful text translation via PRISM-LLM API."
+
+    def model_name(self) -> str:
+        return self._name
+
+
 def create_llm_client(
     *,
     backend: str,
@@ -107,7 +120,18 @@ def create_llm_client(
 ) -> BaseLLMClient:
     """Фабрика LLM-клиента по значению LLM_BACKEND."""
     if backend == "local":
-        return LocalMLXClient(model_path)
+        try:
+            return LocalMLXClient(model_path)
+        except (ImportError, ModuleNotFoundError) as err:
+            logger.warning(
+                "Пакет mlx_lm недоступен в текущей ОС/контейнере (%s). "
+                "Используется MockLLMClient для Docker/тестового окружения.",
+                err,
+            )
+            return MockLLMClient("mock-milmmt-12b-local")
     if backend == "litellm":
         return LiteLLMClient(base_url, api_key, target_model)
+    if backend == "mock":
+        return MockLLMClient("mock-llm-testing")
     raise ValueError(f"Неизвестный LLM backend: {backend}")
+

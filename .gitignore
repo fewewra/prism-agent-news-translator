@@ -34,5 +34,9 @@ archive_unneeded/*
 .coverage
 htmlcov/
 
+# Local non-repo documentation files
+docs/glossary_guide.md
+
 # OS metadata
 Thumbs.db
+

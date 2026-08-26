@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   translator-api:
     build:
@@ -11,6 +9,8 @@ services:
     env_file:
       - .env
     volumes:
+      - ./src:/app/src
       - ./configs:/app/configs
-      - ./models:/app/models
+    command: ["uvicorn", "src.backend.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
     restart: unless-stopped
+
