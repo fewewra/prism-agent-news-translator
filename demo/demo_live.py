@@ -59,12 +59,13 @@ async def main():
     glossary = GlossaryService("configs/glossary/transneft_glossary_v002.runtime.json")
     ok(f"Загружено {len(glossary.terms)} утверждённых терминов")
 
-    # --- ШАГ 2: Модель ---
-    step(2, "Загрузка модели MiLMMT 12B (mlx-community/MiLMMT-46-12B-v0.1-4bit)...")
+    # --- ШАГ 2: HTTP LLM Клиент ---
+    step(2, "Подключение к HTTP-серверу инференса (LiteLLM / MLX Server)...")
     t0 = time.perf_counter()
-    from src.backend.services.llm_client import LocalMLXClient
-    llm = LocalMLXClient("models/milmmt")
-    ok(f"Модель загружена за {time.perf_counter() - t0:.2f} сек")
+    from src.backend.services.llm_client import create_llm_client
+    llm = create_llm_client(backend="litellm", base_url="http://localhost:8001/v1", target_model="milmmt-12b")
+    ok(f"HTTP LLM Клиент инициализирован za {time.perf_counter() - t0:.2f} сек")
+
 
     from src.backend.api.schemas import TranslationRequest
     from src.backend.services.translation_service import TranslationService

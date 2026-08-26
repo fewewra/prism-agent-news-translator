@@ -79,12 +79,13 @@ async def main():
     print(f"{BLUE}Инициализация компонентов...{RESET}")
     from src.backend.api.schemas import TranslationRequest
     from src.backend.services.glossary_service import GlossaryService
-    from src.backend.services.llm_client import LocalMLXClient
+    from src.backend.services.llm_client import create_llm_client
     from src.backend.services.translation_service import TranslationService
 
     glossary = GlossaryService("configs/glossary/transneft_glossary_v002.runtime.json")
-    llm = LocalMLXClient("models/milmmt")
+    llm = create_llm_client(backend="litellm", base_url="http://localhost:8001/v1", target_model="milmmt-12b")
     service = TranslationService(glossary=glossary, llm=llm)
+
 
     print(f"{GREEN}[INFO] Загружено {len(glossary.terms)} терминов глоссария.{RESET}\n")
 

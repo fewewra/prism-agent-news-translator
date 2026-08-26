@@ -27,9 +27,19 @@ class GlossaryService:
     """Загрузка глоссария и поиск терминов в тексте через лемматизацию."""
 
     def __init__(self, glossary_path: str) -> None:
+        self._glossary_path = glossary_path
         self._morph = pymorphy3.MorphAnalyzer()
         self._terms = self._load_glossary(glossary_path)
         self._lemma_index: dict[str, list[GlossaryTerm]] = self._build_lemma_index()
+
+    def reload(self, path: str | None = None) -> int:
+        """Перезагрузить глоссарий и перестроить лемма-индекс из файла."""
+        if path:
+            self._glossary_path = path
+        self._terms = self._load_glossary(self._glossary_path)
+        self._lemma_index = self._build_lemma_index()
+        return len(self._terms)
+
 
     def _load_glossary(self, path: str) -> tuple[GlossaryTerm, ...]:
         """Загрузить и валидировать runtime JSON глоссария."""
