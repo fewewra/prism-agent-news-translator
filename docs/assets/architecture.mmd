@@ -1,30 +1,41 @@
 graph TD
     Client["Внешний веб-портал (1С-Битрикс)"]
+    Admin["Администратор / Скрипт CI"]
     
     subgraph FastAPI_Microservice["FastAPI Микросервис (Stateless)"]
-        Router["APIRouter (/api/v1/translate)"]
         Security["Security (X-API-Key HMAC)"]
+        RouterTranslate["Router (/api/v1/translate)"]
+        RouterReload["Router (/api/v1/glossary/reload)"]
         TransSvc["TranslationService (Orchestrator)"]
-        GlossarySvc["GlossaryService (pymorphy3 Lemmatizer)"]
-        PromptSvc["PromptService (Fidelity Prompt Builder)"]
-        LLMClient{"LLMClient (Factory)"}
+        GlossarySvc["GlossaryService (pymorphy3)"]
+        PromptSvc["PromptService (system_prompt.md)"]
+        LLMClient["LiteLLMClient (Async HTTP REST)"]
     end
     
-    subgraph GlossaryData["Конфигурация"]
-        RuntimeJSON["transneft_glossary_v002.runtime.json (115 terms)"]
+    subgraph GlossaryPipeline["Работа с глоссарием"]
+        ExcelData["Исходник (.xlsx / .csv)"]
+        ParserCLI["scripts/parse_glossary.py"]
+        RuntimeJSON["transneft_glossary_v002.runtime.json"]
     end
 
-    subgraph LLM_Backends["LLM Инференс (Переключается через .env)"]
-        LocalMLX["LocalMLXClient (MiLMMT 12B 4-bit)"]
-        LiteLLM["LiteLLMClient (OpenAI API / Corporate Proxy)"]
+    subgraph LLM_Inference_Server["Выделенный LLM Инференс (HTTP)"]
+        LLMProxy["LiteLLM / vLLM Proxy / demo/mlx_server.py (Port 8001)"]
     end
 
-    Client -- "POST /api/v1/translate (X-API-Key)" --> Security
-    Security --> Router
-    Router --> TransSvc
+    Client -- "POST /api/v1/translate" --> Security
+    Admin -- "POST /api/v1/glossary/reload" --> Security
+    Security --> RouterTranslate
+    Security --> RouterReload
+    
+    RouterTranslate --> TransSvc
+    RouterReload --> GlossarySvc
+    
     TransSvc --> GlossarySvc
-    GlossarySvc --> RuntimeJSON
     TransSvc --> PromptSvc
     TransSvc --> LLMClient
-    LLMClient -- "LLM_BACKEND=local" --> LocalMLX
-    LLMClient -- "LLM_BACKEND=litellm" --> LiteLLM
+    
+    ExcelData --> ParserCLI
+    ParserCLI --> RuntimeJSON
+    GlossarySvc -- "Загрузка / Hot-Reload" --> RuntimeJSON
+    
+    LLMClient -- "POST /v1/chat/completions" --> LLMProxy

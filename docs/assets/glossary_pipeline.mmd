@@ -1,0 +1,16 @@
+sequenceDiagram
+    autonumber
+    actor Admin as Администратор / Скрипт
+    participant Parser as CLI scripts/parse_glossary.py
+    participant File as configs/glossary/...runtime.json
+    participant API as FastAPI Router
+    participant GS as GlossaryService (RAM)
+
+    Admin->>Parser: python parse_glossary.py -i data/glossary.csv
+    Parser->>File: Запись валидированного JSON
+    Admin->>API: POST /api/v1/glossary/reload (X-API-Key)
+    API->>GS: reload()
+    GS->>File: Чтение обновленного JSON с диска
+    GS->>GS: Лемматизация через pymorphy3 & Пересборка лемма-индекса в RAM
+    GS-->>API: terms_count (122)
+    API-->>Admin: 200 OK {"status": "ok", "terms_count": 122}

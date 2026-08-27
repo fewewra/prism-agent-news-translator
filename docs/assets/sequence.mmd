@@ -4,23 +4,23 @@ sequenceDiagram
     participant API as FastAPI Router
     participant Sec as Security (X-API-Key)
     participant TS as TranslationService
-    participant GS as GlossaryService (pymorphy3)
+    participant GS as GlossaryService
     participant PS as PromptService
-    participant LLM as LLMClient (MLX / LiteLLM)
+    participant LLM as LLM Server (HTTP :8001)
 
-    Bitrix->>API: POST /api/v1/translate (JSON payload + X-API-Key)
+    Bitrix->>API: POST /api/v1/translate (JSON + X-API-Key)
     API->>Sec: verify_api_key(x_api_key)
-    alt Неверный ключ
+    alt Неверный заголовок X-API-Key
         Sec-->>Bitrix: 401 Unauthorized
     end
     API->>TS: translate(TranslationRequest)
-    TS->>GS: match_terms(text, limit)
-    Note over GS: Лемматизация слов текста через pymorphy3<br/>Поиск пересечений с индексами терминов
-    GS-->>TS: list[GlossaryTerm]
-    TS->>PS: build_user_prompt(title/body, terms)
-    PS-->>TS: user_prompt_string
-    TS->>LLM: generate(SYSTEM_PROMPT, user_prompt)
-    Note over LLM: Инференс MiLMMT 12B (Local)<br/>или запрос к LiteLLM-прокси
-    LLM-->>TS: translation_text
+    TS->>GS: match_terms(text, limit=5)
+    Note over GS: Лемматизация через pymorphy3<br/>Поиск по лемма-индексу
+    GS-->>TS: matched_terms_list
+    TS->>PS: build_user_prompt(text, terms)
+    PS-->>TS: formatted_user_prompt
+    TS->>LLM: POST /v1/chat/completions (HTTP REST)
+    Note over LLM: Инференс модели (vLLM / LiteLLM / MLX Server)
+    LLM-->>TS: 200 OK (JSON completion)
     TS-->>API: TranslationResponse
-    API-->>Bitrix: 200 OK (JSON с переводом и метриками)
+    API-->>Bitrix: 200 OK (news_id, translated_title, detail_text, meta)

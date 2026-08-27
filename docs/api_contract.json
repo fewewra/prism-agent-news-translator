@@ -1,9 +1,9 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "Transneft News Translator API",
-    "description": "Микросервис машинного перевода новостей с русского на английский язык с поддержкой глоссария и M2M-авторизации.",
-    "version": "0.1.0"
+    "title": "PRISM-LLM Translator API",
+    "description": "Микросервис машинного перевода новостей RU->EN для 1С-Битрикс с поддержкой корпоративного глоссария.",
+    "version": "1.0.0"
   },
   "servers": [
     {
@@ -15,7 +15,7 @@
     "/health": {
       "get": {
         "summary": "Healthcheck",
-        "description": "Проверка работоспособности сервиса.",
+        "description": "Проверка доступности сервиса.",
         "responses": {
           "200": {
             "description": "Сервис готов к работе",
@@ -31,14 +31,14 @@
     "/api/v1/translate": {
       "post": {
         "summary": "Перевод новости RU -> EN",
-        "description": "Принимает заголовок и текст новости на русском языке, выполняет детерминированный перевод с опциональной интеграцией корпоративного глоссария.",
+        "description": "Принимает news_id, title, announce, detail_text и выполняет перевод с внедрением терминов глоссария.",
         "parameters": [
           {
             "name": "X-API-Key",
             "in": "header",
             "required": true,
             "schema": { "type": "string" },
-            "description": "Статический M2M-токен авторизации (BITRIX_AUTH_TOKEN)"
+            "description": "M2M токен авторизации (BITRIX_AUTH_TOKEN)"
           }
         ],
         "requestBody": {
@@ -47,25 +47,16 @@
             "application/json": {
               "schema": {
                 "type": "object",
-                "required": ["title", "body"],
+                "required": ["news_id"],
                 "properties": {
-                  "title": {
-                    "type": "string",
-                    "minLength": 1,
-                    "maxLength": 1000,
-                    "example": "Завод ПАО «Транснефть» разработал электродвигатель для ледокола"
-                  },
-                  "body": {
-                    "type": "string",
-                    "minLength": 1,
-                    "maxLength": 50000,
-                    "example": "АО «Транснефть - Верхняя Волга» завершило плановые ремонтные работы..."
-                  },
-                  "glossary_mode": {
-                    "type": "string",
-                    "enum": ["disabled", "retrieved_top3", "retrieved_top5", "retrieved_top10"],
-                    "default": "disabled",
-                    "description": "Режим подключения терминов глоссария"
+                  "news_id": { "type": "integer", "example": 701 },
+                  "title": { "type": "string", "example": "Выделение вычислительных мощностей для СУД" },
+                  "announce": { "type": "string", "example": "В рамках сервисов КИС УАТ и ЕППО выделены ресурсы." },
+                  "detail_text": { "type": "string", "example": "Для СУД выделены серверы..." },
+                  "glossary": {
+                    "type": "object",
+                    "additionalProperties": { "type": "string" },
+                    "example": { "ледокол": "icebreaker vessel" }
                   }
                 }
               }
@@ -78,28 +69,57 @@
             "content": {
               "application/json": {
                 "example": {
-                  "request_id": "a1b2c3d4e5f67890",
-                  "title_translated": "The Transneft plant has developed an electric motor for an icebreaker.",
-                  "body_translated": "Transneft-Verkhnyaya Volga JSC has completed scheduled maintenance...",
-                  "glossary_terms_applied": [
-                    {
-                      "term_id": "tn_0001",
-                      "ru_term": "экологическая безопасность",
-                      "en_preferred": "environmental safety"
-                    }
-                  ],
-                  "model_name": "milmmt-12b-mlx-4bit-local",
-                  "processing_time_sec": 3.296
+                  "news_id": 701,
+                  "translated_title": "Allocation of Computing Capacities for DMS",
+                  "translated_announce": "Additional resources allocated for CIS ITARM and UPRP.",
+                  "translated_detail_text": "Servers allocated for DMS...",
+                  "meta": {
+                    "model_used": "milmmt-12b",
+                    "processing_time_ms": 2840,
+                    "terms_applied": [
+                      {
+                        "term_id": "tn_0116",
+                        "ru_term": "Служба управления данными",
+                        "en_preferred": "Data Management Service (DMS)"
+                      }
+                    ]
+                  }
                 }
               }
             }
           },
-          "401": {
-            "description": "Неверный или отсутствующий X-API-Key"
-          },
-          "422": {
-            "description": "Ошибка валидации входных данных (пустые поля, слишком длинный текст)"
+          "401": { "description": "Неверный X-API-Key" },
+          "422": { "description": "Ошибка валидации входных данных" }
+        }
+      }
+    },
+    "/api/v1/glossary/reload": {
+      "post": {
+        "summary": "Горячая перезагрузка глоссария",
+        "description": "Перечитывает файл глоссария с диска и перестраивает лемма-индекс в RAM без перезапуска сервиса.",
+        "parameters": [
+          {
+            "name": "X-API-Key",
+            "in": "header",
+            "required": true,
+            "schema": { "type": "string" },
+            "description": "M2M токен авторизации (BITRIX_AUTH_TOKEN)"
           }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешный сброс и построение индекса",
+            "content": {
+              "application/json": {
+                "example": {
+                  "status": "ok",
+                  "message": "Glossary reloaded successfully",
+                  "terms_count": 122
+                }
+              }
+            }
+          },
+          "401": { "description": "Неверный X-API-Key" }
         }
       }
     }
