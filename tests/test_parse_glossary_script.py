@@ -1,9 +1,8 @@
 """Тестирование CLI-утилиты парсинга таблицы глоссария scripts/parse_glossary.py."""
 
-import json
 from pathlib import Path
 
-from scripts.parse_glossary import build_runtime_json, parse_csv_glossary
+from scripts.parse_glossary import parse_csv_file
 
 
 def test_parse_csv_glossary(tmp_path: Path):
@@ -15,24 +14,8 @@ def test_parse_csv_glossary(tmp_path: Path):
         encoding="utf-8-sig",
     )
 
-    terms = parse_csv_glossary(csv_file)
-    assert len(terms) == 2
-    assert terms[0]["ru_term"] == "Служба управления данными"
-    assert terms[0]["en_preferred"] == "Data Management Service (DMS)"
-    assert terms[0]["ru_aliases"] == ["СУД", "Службе управления данными"]
-    assert terms[0]["priority"] == "mandatory"
+    glossary_dict = parse_csv_file(csv_file)
+    assert len(glossary_dict) == 2
+    assert glossary_dict["Служба управления данными"] == "Data Management Service (DMS)"
+    assert glossary_dict["Единство"] == "Unity"
 
-
-def test_build_runtime_json(tmp_path: Path):
-    sample_terms = [
-        {
-            "term_id": "tn_0001",
-            "ru_term": "Тест",
-            "en_preferred": "Test",
-            "ru_aliases": [],
-            "status": "approved",
-        }
-    ]
-    data = build_runtime_json(sample_terms)
-    assert data["schema_version"] == "transneft-glossary-runtime-v002"
-    assert len(data["terms"]) == 1

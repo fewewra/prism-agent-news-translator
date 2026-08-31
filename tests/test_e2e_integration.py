@@ -16,11 +16,11 @@ API_KEY = "dev-token-change-me"
 
 class TestE2ETranslationLifecycle:
     def test_full_news_payload_with_title_announce_and_detail(
-        self, mock_glossary_path: str, mock_llm_client: AsyncMock
+        self, mock_llm_client: AsyncMock
     ):
         from src.backend.services.glossary_service import GlossaryService
 
-        glossary = GlossaryService(mock_glossary_path)
+        glossary = GlossaryService()
         service = TranslationService(glossary=glossary, llm=mock_llm_client)
         set_translation_service(service)
 
@@ -31,6 +31,10 @@ class TestE2ETranslationLifecycle:
             "title": "Ремонт перекачивающей станции",
             "announce": "Завершены работы на объекте",
             "detail_text": "В ходе работ проведена проверка оборудования и промышленной безопасности.",
+            "glossary": {
+                "перекачивающая станция": "pumping station",
+                "промышленная безопасность": "industrial safety",
+            },
         }
 
         response = client.post(

@@ -38,7 +38,7 @@ class LiteLLMClient(BaseLLMClient):
         self._http = httpx.AsyncClient(timeout=120.0)
 
     async def generate(self, system_prompt: str, user_prompt: str) -> str:
-        url = f"{self._base_url}/chat/completions"
+        url = self._base_url if self._base_url.endswith("/chat/completions") else f"{self._base_url}/chat/completions"
         headers = {}
         if self._api_key:
             headers["Authorization"] = f"Bearer {self._api_key}"
@@ -55,10 +55,45 @@ class LiteLLMClient(BaseLLMClient):
 
         try:
             response = await self._http.post(url, headers=headers, json=payload)
-            response.raise_for_status()
+            if response.status_code >= 400:
+                err_detail = response.text
+                try:
+                    err_json = response.json()
+                    err_detail = err_json.get("error", err_json.get("message", response.text))
+                except Exception:
+                    pass
+                logger.error("LM Studio HTTP %d error (%s): %s", response.status_code, url, err_detail)
+                raise RuntimeError(
+                    f"LLM API returned {response.status_code}: {err_detail}. "
+                    "Убедитесь, что модель загружена в оперативную память в интерфейсе LM Studio (кнопка '+ Load Model')."
+                )
             data: dict[str, Any] = response.json()
             return data["choices"][0]["message"]["content"].strip()
+        except RuntimeError:
+            raise
         except Exception as err:
+            # Автоматический фоллбэк для Docker-контейнеров, когда 127.0.0.1 не дотягивается до хоста
+            if ("127.0.0.1" in url or "localhost" in url) and ("ConnectError" in str(type(err)) or "ConnectError" in str(err)):
+                alt_url = url.replace("127.0.0.1", "host.docker.internal").replace("localhost", "host.docker.internal")
+                logger.warning("Не удалось подключиться к %s в Docker. Автоматически пробуем хост-адрес: %s", url, alt_url)
+                try:
+                    alt_resp = await self._http.post(alt_url, headers=headers, json=payload)
+                    if alt_resp.status_code >= 400:
+                        alt_detail = alt_resp.text
+                        try:
+                            alt_json = alt_resp.json()
+                            alt_detail = alt_json.get("error", alt_json.get("message", alt_resp.text))
+                        except Exception:
+                            pass
+                        raise RuntimeError(
+                            f"LLM API returned {alt_resp.status_code}: {alt_detail}. "
+                            "Убедитесь, что модель загружена в оперативную память в интерфейсе LM Studio (кнопка '+ Load Model')."
+                        )
+                    alt_data: dict[str, Any] = alt_resp.json()
+                    return alt_data["choices"][0]["message"]["content"].strip()
+                except Exception as alt_err:
+                    err = alt_err
+
             logger.error("Ошибка при вызове LLM HTTP API (%s): %s", url, err)
             raise RuntimeError(f"LLM Inference HTTP error: {err}") from err
 
@@ -68,16 +103,13 @@ class LiteLLMClient(BaseLLMClient):
 
 def create_llm_client(
     *,
-    backend: str = "litellm",
     base_url: str = "",
     api_key: str = "",
     target_model: str = "",
-    **_kwargs: Any,
 ) -> BaseLLMClient:
-    """Фабрика LLM-клиента."""
-    # Всегда создаём HTTP REST-клиент к серверу инференса
-    default_url = base_url or "http://localhost:8001/v1"
-    default_model = target_model or "milmmt-12b"
+    """Фабрика LLM-клиента для работы через HTTP REST (LM Studio / LiteLLM / vLLM)."""
+    default_url = base_url or "http://127.0.0.1:1234/v1"
+    default_model = target_model or "milmmt-46-12b-v0.1"
     return LiteLLMClient(
         base_url=default_url,
         api_key=api_key,

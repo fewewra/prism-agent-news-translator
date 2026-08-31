@@ -6,11 +6,14 @@ services:
     container_name: transneft_news_translator
     ports:
       - "8000:8000"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     env_file:
       - .env
     volumes:
       - ./src:/app/src
       - ./configs:/app/configs
+      - ./.env:/app/.env
     command: ["uvicorn", "src.backend.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
     restart: unless-stopped
 

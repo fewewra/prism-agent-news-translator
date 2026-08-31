@@ -15,10 +15,10 @@ API_KEY = "dev-token-change-me"
 
 
 @pytest.fixture
-def client(mock_glossary_path: str, mock_llm_client: AsyncMock) -> TestClient:
+def client(mock_llm_client: AsyncMock) -> TestClient:
     from src.backend.services.glossary_service import GlossaryService
 
-    glossary = GlossaryService(mock_glossary_path)
+    glossary = GlossaryService()
     service = TranslationService(glossary=glossary, llm=mock_llm_client)
     set_translation_service(service)
     return TestClient(app, raise_server_exceptions=False)

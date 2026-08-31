@@ -23,19 +23,10 @@ class Settings(BaseSettings):
     # --- Security & Authorization ---
     bitrix_auth_token: str = "dev-token-change-me"
 
-    # --- LLM Backend Switch ---
-    llm_backend: Literal["local", "litellm"] = "local"
-
-    # --- LiteLLM (for corporate perimeter) ---
-    litellm_base_url: str = ""
-    litellm_api_key: str = ""
-    target_model_name: str = "qwen/qwen"
-
-    # --- Local MLX (for local development) ---
-    local_model_path: str = "models/milmmt"
-
-    # --- Glossary ---
-    glossary_path: str = "configs/glossary/transneft_glossary_v002.runtime.json"
+    # --- LLM API Settings (LM Studio / LiteLLM / vLLM REST Proxy) ---
+    llm_base_url: str = "http://host.docker.internal:1234/v1"
+    llm_api_key: str = ""
+    target_model_name: str = "milmmt-46-12b-v0.1"
 
     # --- Observability (Langfuse) ---
     langfuse_host: str = ""

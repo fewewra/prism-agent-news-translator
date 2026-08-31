@@ -34,8 +34,10 @@ archive_unneeded/*
 .coverage
 htmlcov/
 
-# Local non-repo documentation files
+# Local non-repo documentation & collection files
 docs/glossary_guide.md
+.postman/
+postman/
 
 # OS metadata
 Thumbs.db

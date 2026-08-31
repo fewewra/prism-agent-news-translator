@@ -32,12 +32,10 @@ TEST_CASES = [
 
 
 @pytest.mark.asyncio
-async def test_glossary_robustness_cases(
-    mock_glossary_path: str, mock_llm_client: AsyncMock
-):
+async def test_glossary_robustness_cases(mock_llm_client: AsyncMock):
     from src.backend.services.glossary_service import GlossaryService
 
-    glossary = GlossaryService(mock_glossary_path)
+    glossary = GlossaryService()
     service = TranslationService(glossary=glossary, llm=mock_llm_client)
 
     for case in TEST_CASES:

@@ -40,23 +40,10 @@ class TranslationService:
         ]
         full_text = "\n".join(full_text_parts)
 
-        # 2. Находим корпоративные термины в тексте
-        matched_terms: List[GlossaryTerm] = self._glossary.match_terms(full_text, limit=5)
-
-        # 3. Если во входящем запросе передан кастомный словарь request.glossary, интегрируем его
-        if request.glossary:
-            for ru_term, en_pref in request.glossary.items():
-                matched_terms.append(
-                    GlossaryTerm(
-                        term_id=f"custom_{len(matched_terms) + 1}",
-                        ru_term=ru_term,
-                        en_preferred=en_pref,
-                        ru_aliases=(),
-                        en_forbidden=(),
-                        priority="mandatory",
-                        domain="custom",
-                    )
-                )
+        # 2. Фильтруем через pymorphy3 только те термины из request.glossary, которые физически есть в тексте
+        matched_terms: List[GlossaryTerm] = self._glossary.match_terms(
+            full_text, glossary_input=request.glossary, limit=10
+        )
 
         # 4. Выполняем перевод каждого присутствующего текстового поля
         translated_title: str | None = None

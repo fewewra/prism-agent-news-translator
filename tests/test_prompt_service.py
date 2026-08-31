@@ -26,14 +26,13 @@ class TestPromptService:
                 ru_term="нефтепровод",
                 en_preferred="oil pipeline",
                 ru_aliases=(),
-                en_forbidden=(),
                 priority="mandatory",
                 domain="test",
             )
         ]
         prompt = build_user_prompt("Ремонт нефтепровода", terms)
-        assert "нефтепровод = oil pipeline" in prompt
-        assert "terminology" in prompt.lower()
+        assert "- нефтепровод => oil pipeline" in prompt
+        assert "mandatory corporate glossary" in prompt.lower()
         assert "Russian source:" in prompt
 
     def test_system_prompt_loaded_from_file(self):

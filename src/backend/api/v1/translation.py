@@ -23,17 +23,6 @@ async def translate(
     request: TranslationRequest,
     _api_key: str = Depends(verify_api_key),
 ) -> TranslationResponse:
-    """Перевод текста новости RU→EN с опциональным глоссарием."""
+    """Перевод текста новости RU→EN с опциональным глоссарием в запросе."""
     return await _translation_service.translate(request)
-
-
-@router.post("/glossary/reload")
-async def reload_glossary(
-    _api_key: str = Depends(verify_api_key),
-) -> dict[str, str | int]:
-    """Горячая перезагрузка глоссария с диска без перезапуска сервиса."""
-    if _translation_service and hasattr(_translation_service, "_glossary"):
-        total = _translation_service._glossary.reload()
-        return {"status": "ok", "message": "Glossary reloaded successfully", "terms_count": total}
-    return {"status": "error", "message": "Glossary service not initialized", "terms_count": 0}
 
