@@ -45,12 +45,8 @@ class TestGlossaryMorphologyAnalysis:
             matched_ru = [t.ru_term for t in matched]
             assert "ИСУРП" in matched_ru, f"Не найден термин 'ИСУРП' в тексте: '{text}'"
 
-    @pytest.mark.xfail(
-        reason="Ограничение GlossaryService._text_lemma_ngrams: n-граммы жестко ограничены диапазоном 1..4 слов (min(5, ...)). Термины из 5+ слов не сопоставляются!",
-        strict=True,
-    )
-    def test_long_terms_5_words_and_more_fail_due_to_ngram_limit(self):
-        """Демонстрация дефекта: термины длиной более 4 слов не матчатся в GlossaryService."""
+    def test_long_terms_5_words_and_more_match_successfully(self):
+        """Проверка: термины длиной более 4 слов успешно сопоставляются в GlossaryService."""
         glossary = {
             "автоматизированная система управления технологическими процессами": "automated process control system",
             "Корпоративная информационная система управления ИТ-архитектурой и требованиями": "CIS ITARM",
@@ -64,7 +60,6 @@ class TestGlossaryMorphologyAnalysis:
         matched = self.svc.match_terms(text, glossary_input=glossary)
         matched_ru = [t.ru_term for t in matched]
 
-        # Этот assert упадет (XFAIL), так как 5-граммы не генерируются в _text_lemma_ngrams
         assert "автоматизированная система управления технологическими процессами" in matched_ru
 
     @pytest.mark.xfail(

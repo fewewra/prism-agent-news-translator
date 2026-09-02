@@ -39,8 +39,8 @@ class GlossaryService:
             lemmas.append(parsed[0].normal_form if parsed else w)
         return tuple(lemmas)
 
-    def _text_lemma_ngrams(self, text: str) -> set[str]:
-        """Извлечь все лемма-нграммы (1..4 слова) из исходного текста."""
+    def _text_lemma_ngrams(self, text: str, max_n: int = 10) -> set[str]:
+        """Извлечь все лемма-нграммы (1..max_n слов) из исходного текста."""
         words = re.findall(r"[а-яёА-ЯЁa-zA-Z0-9]+", text.lower())
         lemmas = []
         for w in words:
@@ -48,7 +48,7 @@ class GlossaryService:
             lemmas.append(parsed[0].normal_form if parsed else w)
 
         ngrams: set[str] = set()
-        for n in range(1, min(5, len(lemmas) + 1)):
+        for n in range(1, min(max_n + 1, len(lemmas) + 1)):
             for i in range(len(lemmas) - n + 1):
                 ngrams.add(" ".join(lemmas[i : i + n]))
         return ngrams
@@ -121,7 +121,8 @@ class GlossaryService:
                     key = " ".join(lemmas)
                     lemma_index.setdefault(key, []).append(term)
 
-        text_ngrams = self._text_lemma_ngrams(text)
+        max_term_len = max((len(k.split()) for k in lemma_index), default=4)
+        text_ngrams = self._text_lemma_ngrams(text, max_n=max(4, max_term_len))
         seen_ids: set[str] = set()
         matched: list[GlossaryTerm] = []
 
