@@ -39,7 +39,7 @@ def build_user_prompt(
     text: str,
     matched_terms: Sequence[GlossaryTerm],
 ) -> str:
-    """Собрать пользовательский промпт с универсальной строгой инструкцией по глоссарию."""
+    """Собрать пользовательский промпт с универсальной строгой инструкцией по глоссарию в формате MD+XML."""
     blocks: list[str] = []
     if matched_terms:
         unique_pairs: dict[str, str] = {}
@@ -50,8 +50,15 @@ def build_user_prompt(
             f"- {ru} => {en}" for ru, en in unique_pairs.items()
         )
         blocks.append(
-            "MANDATORY CORPORATE GLOSSARY (Strictly enforce these exact translations whenever a corresponding Russian term appears in the text):\n"
+            "<glossary>\n"
+            "MANDATORY CORPORATE GLOSSARY (Strictly enforce these exact translations whenever a corresponding Russian term appears in the text regardless of case or inflection):\n"
             + glossary_lines
+            + "\n</glossary>"
         )
-    blocks.append("Russian source:\n" + text + "\nEnglish translation:")
+    blocks.append(
+        "<source_text>\n"
+        "Russian source:\n"
+        + text
+        + "\n</source_text>\n\nEnglish translation:"
+    )
     return "\n\n".join(blocks)
