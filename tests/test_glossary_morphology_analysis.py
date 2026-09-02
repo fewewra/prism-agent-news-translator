@@ -62,19 +62,14 @@ class TestGlossaryMorphologyAnalysis:
 
         assert "автоматизированная система управления технологическими процессами" in matched_ru
 
-    @pytest.mark.xfail(
-        reason="Особенность pymorphy3: для неизвестных аббревиатур при склонении (КИС УАТом) первая гипотеза parse()[0] выдает ошибочную лемму 'уатом', а не 'уат'.",
-        strict=True,
-    )
-    def test_colloquial_acronym_inflection_xfail(self):
-        """Демонстрация ограничения pymorphy3: разговорные склонения аббревиатур могут не распознаваться."""
+    def test_colloquial_acronym_inflection_matches_successfully(self):
+        """Проверка: разговорные склонения аббревиатур (КИС УАТом) успешно сопоставляются благодаря многогипотезному анализу."""
         glossary = {"КИС УАТ": "KIS UAT System"}
         text = "Интеграция с КИС УАТом завершена в срок."
 
         matched = self.svc.match_terms(text, glossary_input=glossary)
         matched_ru = [t.ru_term for t in matched]
 
-        # Этот assert упадет (XFAIL), так как лемма 'уатом' != 'уат'
         assert "КИС УАТ" in matched_ru
 
     def test_glossary_service_does_not_mutate_translation_text(self):

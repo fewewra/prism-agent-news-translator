@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import itertools
 import re
 from dataclasses import dataclass
 from typing import Dict, List, Sequence, Union
@@ -40,17 +41,23 @@ class GlossaryService:
         return tuple(lemmas)
 
     def _text_lemma_ngrams(self, text: str, max_n: int = 10) -> set[str]:
-        """Извлечь все лемма-нграммы (1..max_n слов) из исходного текста."""
+        """Извлечь все лемма-нграммы (1..max_n слов) из исходного текста с учетом альтернативных разборов."""
         words = re.findall(r"[а-яёА-ЯЁa-zA-Z0-9]+", text.lower())
-        lemmas = []
+        word_lemmas = []
         for w in words:
             parsed = self._morph.parse(w)
-            lemmas.append(parsed[0].normal_form if parsed else w)
+            if parsed:
+                # Сохраняем уникальные нормальные формы (до 3 гипотез для покрытия омонимов и аббревиатур)
+                unique_nf = list(dict.fromkeys(p.normal_form for p in parsed))[:3]
+                word_lemmas.append(unique_nf)
+            else:
+                word_lemmas.append([w])
 
         ngrams: set[str] = set()
-        for n in range(1, min(max_n + 1, len(lemmas) + 1)):
-            for i in range(len(lemmas) - n + 1):
-                ngrams.add(" ".join(lemmas[i : i + n]))
+        for n in range(1, min(max_n + 1, len(word_lemmas) + 1)):
+            for i in range(len(word_lemmas) - n + 1):
+                for combo in itertools.product(*word_lemmas[i : i + n]):
+                    ngrams.add(" ".join(combo))
         return ngrams
 
     def _normalize_input_terms(
