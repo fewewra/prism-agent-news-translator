@@ -247,7 +247,147 @@
       "response": []
     },
     {
-      "name": "8. Ошибка авторизации (Неверный X-API-Key -> 401)",
+      "name": "8. Пример 4: ИСУРП («Незабудка») + Информационная система управления ресурсными планами (С ПОЛНЫМ ГЛОССАРИЕМ)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "X-API-Key",
+            "value": "{{api_key}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"news_id\": 704,\n  \"title\": \"Развертывание системы ИСУРП («Незабудка») в филиальной сети\",\n  \"announce\": \"Новая Информационная система управления ресурсными планами введена в промышленную эксплуатацию.\",\n  \"detail_text\": \"Специалисты завершили интеграцию модулей ИСУРП (Незабудка) для автоматизированного планирования ресурсов компании без задержек.\",\n  \"glossary\": {\n    \"экологическая безопасность\": \"environmental safety\",\n    \"импортозамещение\": \"import substitution\",\n    \"энергосбережение\": \"energy saving\",\n    \"энергоэффективность\": \"energy efficiency\",\n    \"надёжность\": \"reliability\",\n    \"охрана труда\": \"occupational safety\",\n    \"промышленная безопасность\": \"industrial safety\",\n    \"выносное причальное устройство\": \"Single Point Mooring\",\n    \"морской порт\": \"seaport\",\n    \"морской терминал\": \"Marine Terminal\",\n    \"оконечный подводный трубопроводный манифольд\": \"pipeline end manifold\",\n    \"перевалка нефти\": \"oil transshipment\",\n    \"танкер\": \"tanker\",\n    \"якорь-кессон\": \"anchor caisson\",\n    \"качество нефти\": \"oil quality\",\n    \"нефтепродукты\": \"petroleum products\",\n    \"сырая нефть\": \"crude oil\",\n    \"дефект трубопровода\": \"pipeline defect\",\n    \"запорная арматура\": \"block valves\",\n    \"катушка\": \"spool\",\n    \"модернизация\": \"modernisation\",\n    \"подключение оборудования\": \"connection of equipment\",\n    \"регламентное техническое обслуживание\": \"regular maintenance\",\n    \"реконструкция\": \"reconstruction\",\n    \"ремонт\": \"repair\",\n    \"техническое обслуживание\": \"maintenance\",\n    \"техническое перевооружение\": \"upgrade\",\n    \"шаровой кран\": \"ball valve\",\n    \"электроизолирующая вставка\": \"electrical isolation joint\",\n    \"ввод в эксплуатацию\": \"commissioning\",\n    \"вывод из эксплуатации\": \"decommissioning\",\n    \"грузоотправитель\": \"shipper\",\n    \"давление\": \"pressure\",\n    \"источник бесперебойного питания\": \"uninterruptible power supply\",\n    \"километр\": \"kilometre\",\n    \"кубический метр\": \"cubic metre\",\n    \"линейная часть\": \"line pipe\",\n    \"магистральный нефтепровод\": \"main oil pipeline\",\n    \"механико-технологическое оборудование\": \"mechanical and process equipment\",\n    \"нефтеперерабатывающий завод\": \"oil refinery\",\n    \"нефтепровод\": \"oil pipeline\",\n    \"нефтетранспортная инфраструктура\": \"oil transportation infrastructure\",\n    \"оборудование\": \"equipment\",\n    \"объём транспортировки нефти\": \"oil transportation volume\",\n    \"перекачка нефти\": \"oil pumping\",\n    \"поставка нефти\": \"oil supply\",\n    \"сдача нефти\": \"oil delivery\",\n    \"система магистральных нефтепроводов\": \"main oil pipeline system\",\n    \"система сглаживания волн давления\": \"surge relief system\",\n    \"тонна\": \"tonne\",\n    \"транспортировка нефти\": \"oil transportation\",\n    \"трубопровод\": \"pipeline\",\n    \"трубопроводная система\": \"pipeline system\",\n    \"узел регулирования давления\": \"pressure control station\",\n    \"электрооборудование\": \"electrical equipment\",\n    \"плановая остановка\": \"scheduled shutdown\",\n    \"планово-предупредительный ремонт\": \"scheduled preventive maintenance\",\n    \"автоматизация\": \"automation\",\n    \"автоматизированная система управления технологическими процессами\": \"automated process control system\",\n    \"информационная безопасность\": \"information security\",\n    \"информационные технологии\": \"information technology\",\n    \"ИТ-инфраструктура\": \"IT infrastructure\",\n    \"контрольно-измерительные приборы и автоматика\": \"instrumentation and automation\",\n    \"метрология\": \"metrology\",\n    \"промышленная автоматизация\": \"industrial automation\",\n    \"сеть связи\": \"communication network\",\n    \"система управления\": \"control system\",\n    \"центр промышленной автоматизации\": \"Industrial Automation Center\",\n    \"цифровая трансформация\": \"digital transformation\",\n    \"цифровизация\": \"digitalization\",\n    \"магистральный насосный агрегат\": \"mainline pump unit\",\n    \"насосное оборудование\": \"pumping equipment\",\n    \"электродвигатель\": \"electric motor\",\n    \"электропривод\": \"electric drive\",\n    \"головная нефтеперекачивающая станция\": \"head oil pumping station\",\n    \"насосная станция\": \"pumping station\",\n    \"нефтеперекачивающая станция\": \"oil pumping station\",\n    \"резервуар\": \"tank\",\n    \"резервуарный парк\": \"tank farm\",\n    \"Программа устранения узких мест\": \"Debottlenecking Program\",\n    \"производительность\": \"capacity\",\n    \"пропускная способность\": \"throughput capacity\",\n    \"тонна в год\": \"tonnes per year\",\n    \"АО «КазТрансОйл»\": \"KazTransOil JSC\",\n    \"Каспийский регион\": \"Caspian Region\",\n    \"Каспийский Трубопроводный Консорциум\": \"Caspian Pipeline Consortium\",\n    \"маршрут транспортировки\": \"transportation route\",\n    \"месторождение\": \"oil field\",\n    \"нефтепровод Атырау — Самара\": \"Atyrau–Samara oil pipeline\",\n    \"нефтепровод Тенгиз — Новороссийск\": \"Tengiz–Novorossiysk pipeline\",\n    \"Республика Казахстан\": \"Republic of Kazakhstan\",\n    \"Содружество Независимых Государств\": \"Commonwealth of Independent States\",\n    \"экспортная нефть\": \"export oil\",\n    \"акционер\": \"shareholder\",\n    \"вице-президент\": \"Vice President\",\n    \"генеральный директор\": \"General Director\",\n    \"годовое общее собрание акционеров\": \"Annual General Meeting of Shareholders\",\n    \"дорожная карта\": \"roadmap\",\n    \"дочернее общество\": \"subsidiary\",\n    \"Китайская национальная нефтегазовая корпорация\": \"China National Petroleum Corporation\",\n    \"Международная ассоциация транспортировщиков нефти\": \"International Association of Oil Transporters\",\n    \"нормативный документ\": \"regulatory document\",\n    \"ПАО «Транснефть»\": \"Transneft\",\n    \"первый вице-президент\": \"First Vice President\",\n    \"правление\": \"Management Board\",\n    \"производственная культура\": \"production culture\",\n    \"профессиональные компетенции\": \"professional competencies\",\n    \"Российская Федерация\": \"Russian Federation\",\n    \"совет директоров\": \"Board of Directors\",\n    \"совместное предприятие\": \"joint venture\",\n    \"стратегическая сессия\": \"strategic session\",\n    \"финансовая отчётность\": \"financial statements\",\n    \"чистая прибыль\": \"net profit\",\n    \"без НДС\": \"excluding VAT\",\n    \"линейная производственно-диспетчерская станция\": \"line operation dispatcher station\",\n    \"Служба управления данными\": \"Data Management Department\",\n    \"Корпоративная информационная система управления ИТ-архитектурой и требованиями\": \"CIS ITARM (IT Architecture and Requirements Management System)\",\n    \"Единая платформа производственной отчетности\": \"UPRP (Unified Production Reporting Platform)\",\n    \"Информационная система управления нормативной документацией АСУТП\": \"ISUND APCS (Automated Process Control System Regulatory Documentation Management System)\",\n    \"Система управления ИТ-активами\": \"ITAMS (IT Asset Management System)\",\n    \"Система планирования и контроля\": \"PCS (Planning and Control System)\",\n    \"Корпоративная информационная система «Электронный архив документов»\": \"CIS EDA (Electronic Document Archive)\",\n    \"СУД\": \"Data Management Service (DMS)\",\n    \"КИС УАТ\": \"KIS UAT System\",\n    \"ЕППО\": \"Unified Procurement Platform\",\n    \"ИСУНД АСУТП\": \"ISUND APCS\",\n    \"КАСУА\": \"KASUA System\",\n    \"СПИК\": \"SPIK Control System\",\n    \"ИТ-активов\": \"IT Assets\",\n    \"КИС ЭАД\": \"KIS EAD\",\n    \"МАДОК\": \"MADOK Archive\",\n    \"КИС Доступ\": \"KIS Access System\",\n    \"ИСУРП\": \"ISURP\",\n    \"Информационная система управления ресурсными планами\": \"Information System for Resource Planning (ISURP)\",\n    \"Незабудка\": \"Nezabudka platform\"\n  }\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/v1/translate",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "translate"
+          ]
+        },
+        "description": "Перевод новости №704 с передачей ПОЛНОГО глоссария: проверка сохранения аббревиатуры ИСУРП, ее полной расшифровки и запрета перевода «Незабудка» как «forget-me-not»."
+      },
+      "response": []
+    },
+    {
+      "name": "9. Пример 4: ИСУРП («Незабудка») + Информационная система управления ресурсными планами (БЕЗ ГЛОССАРИЯ)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "X-API-Key",
+            "value": "{{api_key}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"news_id\": 704,\n  \"title\": \"Развертывание системы ИСУРП («Незабудка») в филиальной сети\",\n  \"announce\": \"Новая Информационная система управления ресурсными планами введена в промышленную эксплуатацию.\",\n  \"detail_text\": \"Специалисты завершили интеграцию модулей ИСУРП (Незабудка) для автоматизированного планирования ресурсов компании без задержек.\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/v1/translate",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "translate"
+          ]
+        },
+        "description": "Перевод новости №704 БЕЗ глоссария: демонстрация буквального перевода модели (перевод «Незабудки» как цветка forget-me-not и искажение аббревиатуры ИСУРП)."
+      },
+      "response": []
+    },
+    {
+      "name": "10. Пример 5: Контрольный срез + Без падения серверов (С ПОЛНЫМ ГЛОССАРИЕМ)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "X-API-Key",
+            "value": "{{api_key}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"news_id\": 705,\n  \"title\": \"Контрольный срез производительности корпоративных ИТ-сервисов\",\n  \"announce\": \"Инженеры провели контрольный срез вычислительных мощностей без падения серверов.\",\n  \"detail_text\": \"Плановый контрольный срез подтвердил стабильность кластера: все операции выполнены без падения серверов и без прерывания бизнес-процессов.\",\n  \"glossary\": {\n    \"экологическая безопасность\": \"environmental safety\",\n    \"импортозамещение\": \"import substitution\",\n    \"энергосбережение\": \"energy saving\",\n    \"энергоэффективность\": \"energy efficiency\",\n    \"надёжность\": \"reliability\",\n    \"охрана труда\": \"occupational safety\",\n    \"промышленная безопасность\": \"industrial safety\",\n    \"выносное причальное устройство\": \"Single Point Mooring\",\n    \"морской порт\": \"seaport\",\n    \"морской терминал\": \"Marine Terminal\",\n    \"оконечный подводный трубопроводный манифольд\": \"pipeline end manifold\",\n    \"перевалка нефти\": \"oil transshipment\",\n    \"танкер\": \"tanker\",\n    \"якорь-кессон\": \"anchor caisson\",\n    \"качество нефти\": \"oil quality\",\n    \"нефтепродукты\": \"petroleum products\",\n    \"сырая нефть\": \"crude oil\",\n    \"дефект трубопровода\": \"pipeline defect\",\n    \"запорная арматура\": \"block valves\",\n    \"катушка\": \"spool\",\n    \"модернизация\": \"modernisation\",\n    \"подключение оборудования\": \"connection of equipment\",\n    \"регламентное техническое обслуживание\": \"regular maintenance\",\n    \"реконструкция\": \"reconstruction\",\n    \"ремонт\": \"repair\",\n    \"техническое обслуживание\": \"maintenance\",\n    \"техническое перевооружение\": \"upgrade\",\n    \"шаровой кран\": \"ball valve\",\n    \"электроизолирующая вставка\": \"electrical isolation joint\",\n    \"ввод в эксплуатацию\": \"commissioning\",\n    \"вывод из эксплуатации\": \"decommissioning\",\n    \"грузоотправитель\": \"shipper\",\n    \"давление\": \"pressure\",\n    \"источник бесперебойного питания\": \"uninterruptible power supply\",\n    \"километр\": \"kilometre\",\n    \"кубический метр\": \"cubic metre\",\n    \"линейная часть\": \"line pipe\",\n    \"магистральный нефтепровод\": \"main oil pipeline\",\n    \"механико-технологическое оборудование\": \"mechanical and process equipment\",\n    \"нефтеперерабатывающий завод\": \"oil refinery\",\n    \"нефтепровод\": \"oil pipeline\",\n    \"нефтетранспортная инфраструктура\": \"oil transportation infrastructure\",\n    \"оборудование\": \"equipment\",\n    \"объём транспортировки нефти\": \"oil transportation volume\",\n    \"перекачка нефти\": \"oil pumping\",\n    \"поставка нефти\": \"oil supply\",\n    \"сдача нефти\": \"oil delivery\",\n    \"система магистральных нефтепроводов\": \"main oil pipeline system\",\n    \"система сглаживания волн давления\": \"surge relief system\",\n    \"тонна\": \"tonne\",\n    \"транспортировка нефти\": \"oil transportation\",\n    \"трубопровод\": \"pipeline\",\n    \"трубопроводная система\": \"pipeline system\",\n    \"узел регулирования давления\": \"pressure control station\",\n    \"электрооборудование\": \"electrical equipment\",\n    \"плановая остановка\": \"scheduled shutdown\",\n    \"планово-предупредительный ремонт\": \"scheduled preventive maintenance\",\n    \"автоматизация\": \"automation\",\n    \"автоматизированная система управления технологическими процессами\": \"automated process control system\",\n    \"информационная безопасность\": \"information security\",\n    \"информационные технологии\": \"information technology\",\n    \"ИТ-инфраструктура\": \"IT infrastructure\",\n    \"контрольно-измерительные приборы и автоматика\": \"instrumentation and automation\",\n    \"метрология\": \"metrology\",\n    \"промышленная автоматизация\": \"industrial automation\",\n    \"сеть связи\": \"communication network\",\n    \"система управления\": \"control system\",\n    \"центр промышленной автоматизации\": \"Industrial Automation Center\",\n    \"цифровая трансформация\": \"digital transformation\",\n    \"цифровизация\": \"digitalization\",\n    \"магистральный насосный агрегат\": \"mainline pump unit\",\n    \"насосное оборудование\": \"pumping equipment\",\n    \"электродвигатель\": \"electric motor\",\n    \"электропривод\": \"electric drive\",\n    \"головная нефтеперекачивающая станция\": \"head oil pumping station\",\n    \"насосная станция\": \"pumping station\",\n    \"нефтеперекачивающая станция\": \"oil pumping station\",\n    \"резервуар\": \"tank\",\n    \"резервуарный парк\": \"tank farm\",\n    \"Программа устранения узких мест\": \"Debottlenecking Program\",\n    \"производительность\": \"capacity\",\n    \"пропускная способность\": \"throughput capacity\",\n    \"тонна в год\": \"tonnes per year\",\n    \"АО «КазТрансОйл»\": \"KazTransOil JSC\",\n    \"Каспийский регион\": \"Caspian Region\",\n    \"Каспийский Трубопроводный Консорциум\": \"Caspian Pipeline Consortium\",\n    \"маршрут транспортировки\": \"transportation route\",\n    \"месторождение\": \"oil field\",\n    \"нефтепровод Атырау — Самара\": \"Atyrau–Samara oil pipeline\",\n    \"нефтепровод Тенгиз — Новороссийск\": \"Tengiz–Novorossiysk pipeline\",\n    \"Республика Казахстан\": \"Republic of Kazakhstan\",\n    \"Содружество Независимых Государств\": \"Commonwealth of Independent States\",\n    \"экспортная нефть\": \"export oil\",\n    \"акционер\": \"shareholder\",\n    \"вице-президент\": \"Vice President\",\n    \"генеральный директор\": \"General Director\",\n    \"годовое общее собрание акционеров\": \"Annual General Meeting of Shareholders\",\n    \"дорожная карта\": \"roadmap\",\n    \"дочернее общество\": \"subsidiary\",\n    \"Китайская национальная нефтегазовая корпорация\": \"China National Petroleum Corporation\",\n    \"Международная ассоциация транспортировщиков нефти\": \"International Association of Oil Transporters\",\n    \"нормативный документ\": \"regulatory document\",\n    \"ПАО «Транснефть»\": \"Transneft\",\n    \"первый вице-президент\": \"First Vice President\",\n    \"правление\": \"Management Board\",\n    \"производственная культура\": \"production culture\",\n    \"профессиональные компетенции\": \"professional competencies\",\n    \"Российская Федерация\": \"Russian Federation\",\n    \"совет директоров\": \"Board of Directors\",\n    \"совместное предприятие\": \"joint venture\",\n    \"стратегическая сессия\": \"strategic session\",\n    \"финансовая отчётность\": \"financial statements\",\n    \"чистая прибыль\": \"net profit\",\n    \"без НДС\": \"excluding VAT\",\n    \"линейная производственно-диспетчерская станция\": \"line operation dispatcher station\",\n    \"Служба управления данными\": \"Data Management Department\",\n    \"Корпоративная информационная система управления ИТ-архитектурой и требованиями\": \"CIS ITARM (IT Architecture and Requirements Management System)\",\n    \"Единая платформа производственной отчетности\": \"UPRP (Unified Production Reporting Platform)\",\n    \"Информационная система управления нормативной документацией АСУТП\": \"ISUND APCS (Automated Process Control System Regulatory Documentation Management System)\",\n    \"Система управления ИТ-активами\": \"ITAMS (IT Asset Management System)\",\n    \"Система планирования и контроля\": \"PCS (Planning and Control System)\",\n    \"Корпоративная информационная система «Электронный архив документов»\": \"CIS EDA (Electronic Document Archive)\",\n    \"СУД\": \"Data Management Service (DMS)\",\n    \"КИС УАТ\": \"KIS UAT System\",\n    \"ЕППО\": \"Unified Procurement Platform\",\n    \"ИСУНД АСУТП\": \"ISUND APCS\",\n    \"КАСУА\": \"KASUA System\",\n    \"СПИК\": \"SPIK Control System\",\n    \"ИТ-активов\": \"IT Assets\",\n    \"КИС ЭАД\": \"KIS EAD\",\n    \"МАДОК\": \"MADOK Archive\",\n    \"КИС Доступ\": \"KIS Access System\",\n    \"контрольный срез\": \"performance assessment benchmark\",\n    \"без падения серверов\": \"with zero server downtime\",\n    \"вычислительные мощности\": \"computing power\"\n  }\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/v1/translate",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "translate"
+          ]
+        },
+        "description": "Перевод новости №705 с передачей ПОЛНОГО глоссария: проверка перевода идиоматических фраз «контрольный срез» как «performance assessment benchmark» (вместо «control cut») и «без падения серверов» как «with zero server downtime» (вместо «without server falling/crashing»)."
+      },
+      "response": []
+    },
+    {
+      "name": "11. Пример 5: Контрольный срез + Без падения серверов (БЕЗ ГЛОССАРИЯ)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "X-API-Key",
+            "value": "{{api_key}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"news_id\": 705,\n  \"title\": \"Контрольный срез производительности корпоративных ИТ-сервисов\",\n  \"announce\": \"Инженеры провели контрольный срез вычислительных мощностей без падения серверов.\",\n  \"detail_text\": \"Плановый контрольный срез подтвердил стабильность кластера: все операции выполнены без падения серверов и без прерывания бизнес-процессов.\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/v1/translate",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "translate"
+          ]
+        },
+        "description": "Перевод новости №705 БЕЗ глоссария: демонстрация буквального перевода идиом базовой моделью («контрольный срез» -> «control cut», «без падения серверов» -> «without server falling/crashing»)."
+      },
+      "response": []
+    },
+    {
+      "name": "12. Ошибка авторизации (Неверный X-API-Key -> 401)",
       "request": {
         "method": "POST",
         "header": [
@@ -282,7 +422,7 @@
       "response": []
     },
     {
-      "name": "9. Ошибка валидации (Пустые текстовые поля -> 422)",
+      "name": "13. Ошибка валидации (Пустые текстовые поля -> 422)",
       "request": {
         "method": "POST",
         "header": [
